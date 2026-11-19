@@ -1,0 +1,11 @@
+{
+  "components": {
+    "dependencies": "064ce7ed546084444faa73f2220b162921f14094229ad3ce9ebe311481d9ff41",
+    "engine_source": "e4e7481816f1055879bad1b9166c25ae5f2edc5df6425a9c891dbaaa5da6fa77",
+    "evaluation_code": "00a0bef48ec01eaebbeaa88fd3e205e98d094adfdc1cdb4a81e7481ebebbca1c",
+    "evaluation_data": "da9b7e4baf6a8f7ab621e5f737e72caa74ce95c198ece602b26099a43a6e8bb1"
+  },
+  "created": "2026-11-18T18:49:30+00:00",
+  "model": "en_core_web_sm 3.8.0, spacy 3.8.18",
+  "python": "3.12.14"
+}

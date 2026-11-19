@@ -1,0 +1,13 @@
+﻿CPU: 12th Gen Intel(R) Core(TM) i7-1255U | Python 3.12.14 | spaCy 3.8.18 | phonenumbers 9.0.43 | Windows | pinned to CPU 0, 1 BLAS/OMP thread
+Memory before engine (interpreter + imports of this script): current/peak MB = (87.4, 89.7)
+Engine load (cold start): 607 ms; after load current/peak MB = (124.8, 135.3)
+
+== Hostile input, whole engine, 100,000 chars (bounded time, status must report it) ==
+text     |   chars |   bytes | findings | status   | first ms | mean ms  | median   | p95 ms  | max ms
+digits   |   99999 |   99999 |        0 | complete |    879.7 |    888.3 |    899.3 |       - |    917.1
+plus-chain|   99999 |   99999 |        0 | partial  |   1447.1 |   1509.7 |   1432.8 |       - |   1669.7
+at-signs |  100000 |  100000 |        0 | partial  |    264.0 |    324.5 |    295.7 |       - |    382.3
+no-space |  100000 |  100000 |        0 | partial  |    319.5 |    298.1 |    297.1 |       - |    321.8
+valid-mail|   99994 |   99994 |    14285 | complete |    156.3 |    178.1 |    169.6 |       - |    226.1
+valid-card|   99999 |   99999 |     5000 | complete |    588.3 |    749.0 |    758.6 |       - |    772.9
+valid-phone|   99997 |   99997 |     5882 | complete |    712.9 |    732.2 |    733.6 |       - |    771.1

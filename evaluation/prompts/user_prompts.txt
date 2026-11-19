@@ -1,0 +1,75 @@
+## Prompts contributed by the project owner. Please add 20-40 in the style you actually expect to see.
+##
+## HOW TO WRITE AN ENTRY
+##   * One entry = one prompt (it may span several lines). Entries are separated by a line containing only ---
+##   * Wrap every PERSON mention in double square brackets:   Please email [[Dana Cohen]] about the invoice.
+##   * Titles stay OUTSIDE the brackets:                      Dr. [[Dana Cohen]]
+##   * Optional other PII:  [[EMAIL:a@b.com]]  [[PHONE:+972 3 555 0100]]  [[CREDIT_CARD:4111 1111 1111 1111]]
+##   * Prompts with NO names are welcome too (especially ones with capitalised words that are not people).
+##   * Write them the way real prompts look, including mixed registers; do NOT adapt them to what you think the engine
+##     handles well. Use realistic but FICTIONAL personal details (no real people's private data).
+##   * Lines starting with ## are comments and are ignored.
+##
+## Example (names):    Summarize the complaint from [[Dana Cohen]] about the delayed delivery to Haifa.
+## Example (no names): Explain the difference between a Roth IRA and a traditional IRA.
+##
+## (The entries below were added by the owner; separator lines were inserted by the assistant, wording untouched.)
+Please draft an email to [[Alice Aremic]] asking her to confirm her availability for a project meeting next week.
+---
+Summarize the feedback that [[Nathan Brooks]] provided during yesterday's call.
+---
+Could you help me write a polite reminder to [[Sofia Mendes]] about the overdue invoice?
+---
+Prepare a welcome message for our new colleague, [[Omar Haddad]].
+---
+Please schedule a follow-up with [[Maya Desai]] after the product demonstration.
+---
+Rewrite this note professionally: [[Lucas Bennett]] needs the revised contract before Friday.
+---
+Create a short introduction for Dr. [[Leila Mansour]], who will speak at our conference.
+---
+Please ask [[Ethan Walsh]] whether the updated delivery date works for his team.
+---
+Draft a thank-you message to [[Chloe Laurent]] for helping resolve the support request.
+---
+Write a meeting summary stating that [[Daniel Okeke]] will review the proposal.
+---
+Please address the cover letter to Ms. [[Hana Suzuki]].
+---
+Help me explain to [[Gabriel Costa]] why the payment was delayed.
+---
+Prepare an agenda for my discussion with [[Aisha Rahman]] about the hiring plan.
+---
+Please write a reference letter for [[Tobias Lindgren]], focusing on his teamwork.
+---
+Turn this into an action item: [[Elena Popescu]] should approve the final design.
+---
+Draft a message asking [[Jean-Luc Morel]] to send the signed document.
+---
+Please notify [[Nora Al-Khatib]] that her appointment has been moved to Thursday.
+---
+Compare the suggestions from [[Samuel Reed]] and [[Irene Park]] without choosing a winner.
+---
+Write a handover note from [[Amara Nwosu]] to [[Victor Salazar]] covering the open support tickets.
+---
+Please introduce Prof. [[Anika van Dijk]] to [[Ravi Narayanan]] by email.
+---
+Please summarize the main differences between Microsoft Teams and Slack.
+---
+Draft a travel checklist for a business trip to Austin, Texas.
+---
+Write a short description of Florence, the city in Italy.
+---
+Compare the countries Jordan and Georgia as travel destinations.
+---
+Please turn the heading Quarterly Business Review into sentence case.
+---
+Explain how to export a spreadsheet from Excel as a CSV file.
+---
+Draft a support request about a Windows Update installation failure.
+---
+Summarize the responsibilities of the Head of Operations role.
+---
+Write a product announcement for the Apple Watch.
+---
+Please review the headings Project Overview, Delivery Schedule, and Budget Summary for consistency.

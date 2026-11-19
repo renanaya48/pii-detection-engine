@@ -1,0 +1,29 @@
+{
+  "composition_note": "Purposive sample, NOT representative traffic. Roughly two thirds of the prompts contain names and one third do not; that ratio was chosen by the authors, so precision and false-alarm figures depend on it. Prompts are correctly cased by design, which is an assumption about typical input: real prompts are often lowercase and informal (see the WNUT-17 results). Written by the assistant (author) and contributed by the project owner (user); a few famous names are included.",
+  "counts": {
+    "by_source": {
+      "author": 158,
+      "user": 30
+    },
+    "person_mentions": 148,
+    "person_names_in_both_sources": 2,
+    "records": 188,
+    "single_word_person_mentions": 12,
+    "with_person": 126,
+    "without_person": 62
+  },
+  "created": "2026-11-18T21:15:27+00:00",
+  "data": {
+    "prompts.jsonl": "2a9d6081bbde2cdcc8674852350a2c5b006eda7e3671ac31cd4deac8b3d66e5b"
+  },
+  "frozen_engine": {
+    "engine_source": "e4e7481816f1055879bad1b9166c25ae5f2edc5df6425a9c891dbaaa5da6fa77",
+    "freeze_id": "315b27c4a574"
+  },
+  "name": "prompts: purposive, well-cased",
+  "sources": {
+    "author": "e48969e82b7fd2ba00eeffb42c2ce31e97a4df082c2f18eb5133b40dfdb57bb1",
+    "user": "341d2865993c73666a30234e6913b2b51d36e671cda1d28b0173affc2f82755f"
+  },
+  "status": "scored"
+}

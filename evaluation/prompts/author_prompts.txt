@@ -1,0 +1,321 @@
+## Author-written prompts (the assistant). Purposive sample, correct casing, standard punctuation.
+## Format: entries are separated by a line containing only ---
+##   [[Name]]            marks a PERSON mention (titles such as Dr. or Mrs. stay OUTSIDE the brackets)
+##   [[EMAIL:a@b.com]]   [[PHONE:+44 20 7946 0958]]   [[CREDIT_CARD:4111 1111 1111 1111]]   mark other PII
+## Lines starting with ## are comments. The markers are removed from the text the engine sees.
+Please draft a polite reply to [[Sarah Jenkins]] confirming that her refund was processed on Monday.
+---
+Can you summarize the meeting notes? The attendees were [[Rahul Mehta]], [[Elena Petrova]] and [[Tomás Alvarez]].
+---
+My name is [[Aisha Rahman]] and I would like to change the shipping address for order 48213.
+---
+Write a thank-you note to our teacher, Mrs. [[Delgado]], for all her help this semester.
+---
+Hi team, [[Wei Zhang]] will be out next week, so please send anything urgent to [[Priya Nair]].
+---
+Translate this sentence into French: "Ask [[Oluwaseun Adeyemi]] to call me back tonight."
+---
+The patient, [[Margaret O'Connor]], reported mild dizziness after starting the new prescription. Please rewrite this note in a more formal tone.
+---
+Fix the grammar in this email: "Dear Dr. [[Katarzyna Nowak]], I am writing to ask about the status of my application."
+---
+Who was the lead author of the paper by [[Daniel Okafor]] and [[Mei-Ling Chen]] on battery recycling?
+---
+Please remind [[Yossi Cohen]] that the contract needs his signature by Friday.
+---
+I'm planning a surprise party for my sister [[Noa Levi]]. Can you suggest a theme and a schedule?
+---
+Compose a LinkedIn recommendation for [[Carlos Mendoza]], who managed our logistics team for four years.
+---
+Our new hire, [[Anne-Marie Dupont]], starts on the 3rd. Draft a welcome message for the whole department.
+---
+Could you proofread this? "Mr. [[Hiroshi Tanaka]] will present the quarterly results at 10 a.m. in the main conference room."
+---
+Create a short bio for Professor [[Ibrahim Al-Sayed]], who teaches organic chemistry at the university.
+---
+Reply to [[Jennifer Lopez-Garcia]] and tell her the invoice is attached. Her email is [[EMAIL:j.lopez-garcia@brightfield.example.com]].
+---
+Please call [[Fatima Zahra]] on [[PHONE:+212 5 22 49 83 10]] to confirm the delivery window.
+---
+The commit was authored by [[Luca Bianchi]] and reviewed by [[Sven Lindqvist]]. Summarize what changed.
+---
+Write a eulogy for my grandfather, [[Walter Kowalski]], who loved fishing and old jazz records.
+---
+Draft a complaint to the airline: my passenger [[Priyanka Sharma]] was denied boarding even though her ticket was valid.
+---
+Tell [[Michael]] that the meeting has moved to 3 p.m.
+---
+[[Grace]] asked whether the report could be sent a day earlier. What should I answer?
+---
+Please add [[Will Thompson]] to the distribution list for the weekly newsletter.
+---
+Can you rewrite this sentence? "[[Hunter Davis]] and [[April Brooks]] are leading the audit this quarter."
+---
+Our landlord, Mr. [[Alvarez]], says the lease renewal letter will arrive next week.
+---
+Write a cover letter for the Marketing Manager role. My name is [[Olivia Bennett]] and I have six years of experience in B2B software.
+---
+What would be a good gift for my colleague [[Dmitri Volkov]], who is retiring after thirty years at the plant?
+---
+Give feedback on this paragraph from my essay about [[Marie Curie]] and her work on radioactivity.
+---
+Please ask [[Nguyen Thi Lan]] to resend the scanned passport; the first file was blurry.
+---
+The support ticket was opened by [[Jamal Washington]] and escalated to [[Ingrid Johansson]] in the billing team.
+---
+Summarize this thread: [[Kevin O'Brien]] proposes moving the launch to March, [[Soo-jin Park]] disagrees, and [[Amara Nwosu]] wants more data.
+---
+I need a short speech for the wedding of [[Rebecca Stein]] and [[Jonathan Weiss]] next June.
+---
+Remind me to congratulate [[Mohammed Al-Farsi]] on his promotion.
+---
+Please translate into Spanish: "Our CEO, [[Elizabeth Warren-Hayes]], will join the call at noon."
+---
+Draft an apology to [[Hannah Schmidt]] for the delayed shipment, and offer a ten percent discount.
+---
+Is it appropriate to address the committee chair, Dr. [[Laila Hassan]], by her first name in an email?
+---
+The reference letter should mention that [[Sebastian Ortiz]] led two successful product launches.
+---
+Make this announcement friendlier: "[[Emma Clarke]] has joined the finance team as a senior analyst."
+---
+Please send the minutes to [[Anders Eriksen]] at [[EMAIL:anders.eriksen@nordlys.example.org]] and copy [[Yuki Matsumoto]].
+---
+Rewrite my bio in the third person. I'm [[Thabo Mokoena]], a civil engineer based in Johannesburg.
+---
+Write a get-well message for [[Beatriz Santos]], who is recovering from knee surgery.
+---
+Could you explain why [[Alan Turing]] is considered a founder of computer science?
+---
+Our guest speaker will be Dr. [[Chidi Anagonye]] from the philosophy department.
+---
+I want to thank [[Ravi Kapoor]], [[Leila Haddad]], and [[Tobias Becker]] for their work on the migration.
+---
+Please schedule a call with [[Katja Müller]] for Thursday afternoon, Berlin time.
+---
+Can you check the tone of this message? "[[Priya]], I need the figures today, not tomorrow."
+---
+Add [[Marta Kowalczyk]] as the emergency contact on the form. Her number is [[PHONE:+48 22 555 01 23]].
+---
+Draft a short announcement that [[Gabriel García]] is the new head of customer success.
+---
+The letter is addressed to Ms. [[Odile Fontaine]], 14 Rue de la Paix, Paris.
+---
+Please proofread: "[[Zainab Bello]] and her team finished the audit two weeks ahead of schedule."
+---
+What should I say when [[Bill Murray]] asks about the budget at tomorrow's review?
+---
+Write a recommendation for [[Lars Nilsson]] who is applying to a master's program in data science.
+---
+Please remind everyone that Dr. [[Meera Iyer]] holds office hours on Wednesdays.
+---
+Ask [[Ahmed Khalil]] if the contractor has confirmed the start date.
+---
+I met [[Giulia Romano]] at the conference last week and want to follow up. Can you help me write that email?
+---
+Please update the staff directory: [[Henrik Larsen]] has moved from Oslo to the Copenhagen office.
+---
+Write a poem for [[Charlotte]] on her tenth birthday.
+---
+Our biggest customer, [[Rosa Fernandez]], wants a call before the renewal. How should I prepare?
+---
+Please correct the spelling in this caption: "[[Jean-Luc Moreau]] accepting the award in Cannes."
+---
+Draft a message telling [[Pedro Gonçalves]] his visa appointment is on the 12th.
+---
+The author of the study, [[Aliyah Brooks]], will answer questions after the talk.
+---
+Make a checklist for onboarding [[Zoe Papadopoulos]] on her first day in the design team.
+---
+Please remove [[Tyler Nguyen]] from the project channel and add [[Salma Idrissi]] instead.
+---
+Write a short toast for Uncle [[Raymond]]'s seventieth birthday.
+---
+Could you format this reference? [[Chimamanda Ngozi Adichie]], Half of a Yellow Sun, 2006.
+---
+My manager, [[Patrice Dubois]], asked for a summary of last quarter's incidents. Where should I start?
+---
+Reply to [[Ethan Cohen]]: yes, the 15th works, but we need the signed forms first.
+---
+Please translate the greeting "Dear [[Sofia Ricci]], thank you for your patience."
+---
+[[Dana Abramov]] is asking for an extension on the report. Draft a firm but kind answer.
+---
+Create a seating chart note: [[Olumide Bakare]] next to [[Hanne Vos]], and [[Ji-ho Kim]] near the door.
+---
+The package is for [[Tatiana Smirnova]]. Please confirm the address and charge the card [[CREDIT_CARD:5555 5555 5555 4444]].
+---
+Write a text message to [[Nadav Shapiro]] saying I'll be ten minutes late.
+---
+Explain to [[Francesca Bellini]] why the quote increased by fifteen percent.
+---
+Please help me word a note to [[Henry]], my neighbor, about the noise from his renovation.
+---
+I'm writing a short story. The detective is called Inspector [[Maigret]]; describe her first scene.
+---
+Draft a reminder for [[Kwame Mensah]] to bring his ID to the interview on Tuesday.
+---
+Please write the closing of a letter signed by [[Lucía Herrera]], Director of Operations.
+---
+What is the best way to ask [[Shira Goldberg]] for a reference without sounding pushy?
+---
+Please thank [[Mustafa Yildiz]] for the quick turnaround and attach the revised drawings.
+---
+Write a polite decline to [[Victoria Hale]]'s invitation to speak at the summit.
+---
+The new policy was announced by Chief Justice [[Roberts]] in a short statement. Summarize it neutrally.
+---
+List three questions to ask Dr. [[Elias Thorne]] at the end of the lecture.
+---
+Notify [[Amélie Laurent]] that her order #77120 has shipped, and give the tracking link.
+---
+Please ask [[Boris Ivanov]] to review the pull request before the release freeze.
+---
+How do I politely correct my coworker [[Naomi Fischer]] when she mispronounces a client's name?
+---
+Create a calendar invite title for a one-on-one with [[Jorge Ramirez]] every second Friday.
+---
+Write the opening line of a toast for [[Mira Kapoor]] and [[Arjun Desai]]'s anniversary.
+---
+Tell [[Carla]] and [[Diego]] that the keys are under the mat.
+---
+Please give me a short summary of the career of [[Serena Williams]] for a school newsletter.
+---
+Help me reply to [[Isabelle Roux]], who wrote: "I was charged twice for the same booking."
+---
+Add [[Joon-woo Lee]] to the thank-you list for volunteers at the charity run.
+---
+The customer, [[Harold Pembroke]], is asking for a callback at [[PHONE:+1 415 555 2671]]. Draft the voicemail.
+---
+Please outline a one-week training plan for our new intern, [[Aaliyah Jackson]].
+---
+Could you list the main achievements of [[Nelson Mandela]] in five bullet points?
+---
+Please send [[Linnea Berg]] the updated floor plan and ask whether the east entrance is acceptable.
+---
+Write a brief note to [[Omar Sheikh]] explaining that the demo has been postponed.
+---
+Our client [[Teresa Alonso]] wants the logo in blue. Please restate the request clearly for the designer.
+---
+Tell me how to address a letter to Judge [[Anita Kowalski]].
+---
+Summarize the biography of [[Frida Kahlo]] in a single paragraph for a gallery label.
+---
+Please wish [[Eitan Barak]] a happy birthday on behalf of the whole team.
+---
+Write a recommendation for [[Valentina Cruz]], who tutored first-year students in mathematics.
+---
+Ask [[Pavel Novak]] and [[Mirela Popescu]] to confirm their flight details by Friday.
+---
+Draft a reply to [[Cheng Li]] who asked when the updated price list will be ready.
+---
+Explain the project plan to [[Jordan Ellis]], who is joining halfway through the sprint.
+---
+Can you write a short introduction for our speaker, [[Ruth Ben-David]], who studies marine biology?
+---
+Please prepare a farewell card text for [[Samuel Adeleke]], who is leaving after fifteen years.
+---
+Explain how photosynthesis works in two short paragraphs.
+---
+Write a product description for the new Samsung Galaxy tablet, focusing on battery life.
+---
+Summarize the main causes of the French Revolution in three paragraphs.
+---
+What are the main differences between Python and JavaScript for a beginner?
+---
+Plan a three-day trip to Lisbon in October with a budget of 600 euros.
+---
+Draft an announcement for the annual Black Friday sale at Northwind Traders.
+---
+Translate "Where is the nearest train station?" into Spanish and Italian.
+---
+Our Senior Engineer position at Contoso requires five years of experience with distributed systems.
+---
+Give me a recipe for Pad Thai that takes less than thirty minutes.
+---
+Compare the camera quality of the iPhone 15 and the Google Pixel 8.
+---
+Explain the Treaty of Versailles and its effect on Germany after the First World War.
+---
+Create a weekly workout plan for beginners who have only thirty minutes a day.
+---
+How does the Federal Reserve decide when to raise interest rates?
+---
+Write a short description of Austin, Texas for a relocation guide.
+---
+What is the best time of year to visit Florence?
+---
+List the main sights in Georgia for a tourist who only has two days.
+---
+Describe the climate of Jordan and the best months to visit Petra.
+---
+Plan a team offsite in Victoria, British Columbia, for twelve people.
+---
+Compare living costs in Sydney and Melbourne for a young family.
+---
+Explain what a Kubernetes Deployment does and how it differs from a StatefulSet.
+---
+Rewrite this heading in Title Case: the future of remote work in europe.
+---
+Summarize the plot of Pride and Prejudice in five sentences.
+---
+Give me ten ideas for a Halloween party that does not involve scary decorations.
+---
+What does the acronym NASA stand for, and when was it founded?
+---
+Write a job ad for a Customer Success Manager at a small SaaS company in Brooklyn.
+---
+Explain the difference between the Senate and the House of Representatives.
+---
+Create a study schedule for the AWS Solutions Architect exam over six weeks.
+---
+How do I set up two-factor authentication in Microsoft Teams?
+---
+Describe the main features of the Toyota Corolla for a used-car listing.
+---
+Summarize the history of the Roman Empire in a few paragraphs for ninth graders.
+---
+Suggest a name for a bakery located on Elm Street that specializes in sourdough.
+---
+Write a paragraph about the importance of Valentine's Day for local florists.
+---
+What should I pack for a week in Iceland in February?
+---
+Explain how the Mediterranean diet affects heart health.
+---
+Help me prepare for a Project Manager interview at a large bank.
+---
+Describe the rules of Texas Hold'em poker for new players.
+---
+Write an email to the HR department asking about the parental leave policy.
+---
+What are the symptoms of seasonal allergies, and when should I see a Doctor?
+---
+Outline a lesson on the Industrial Revolution for an eighth grade History class.
+---
+Explain the difference between Windows Defender and a third-party antivirus.
+---
+Suggest three good books about the Silk Road and medieval trade.
+---
+Write a short note to my Landlord asking when the heating will be fixed.
+---
+Give me a packing list for a weekend at Lake Tahoe in the winter.
+---
+Describe how the Amazon rainforest regulates global weather patterns.
+---
+Compose a cheerful Monday morning message for the sales team.
+---
+What is the capital of Australia, and why is it not Sydney?
+---
+Draft a press release for the opening of the new Brooklyn Public Library branch.
+---
+Explain what a Product Owner does in a Scrum team.
+---
+How do I convert a Word document with tracked changes into a clean PDF?
+---
+Write a LinkedIn post celebrating the launch of our Spring Collection.
+---
+Provide a short overview of the Marshall Plan and why it mattered for Western Europe.
+---
+Make a shopping list for a vegetarian Thanksgiving dinner for eight people.
+---

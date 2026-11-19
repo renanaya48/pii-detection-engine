@@ -1,0 +1,96 @@
+﻿Memory diagnostic: where does the end-of-benchmark peak come from? (bench/memory_probe.py, bench/probes/platform_cost.py)
+Frozen engine 315b27c4a574, one core, one numeric thread. All sizes in bytes or MiB (1 MiB = 1,048,576 B); limit 150,000,000 B = 143.05 MiB.
+Each condition ran in its OWN fresh process. CPU load at start: 11%
+
+=== A. cost of single calls (fresh process each)
+sys.platform               working set  17.5 ->  17.5 MiB  (+0.0)
+winreg                     working set  17.4 ->  17.4 MiB  (+0.0)
+platform.python_version    working set  17.6 ->  18.1 MiB  (+0.5)
+platform.system            working set  17.4 ->  22.5 MiB  (+5.1)
+
+=== B. repeated scans ALONE (fresh process, 2,000 scans)
+pinned to CPU 0
+before engine, before cpu-model call: working set  26,931,200 B (  25.7 MiB) | peak  26,931,200 B (  25.7 MiB) | private   16.4 MiB
+after engine load:       working set 126,078,976 B ( 120.2 MiB) | peak 138,383,360 B ( 132.0 MiB) | private  100.5 MiB
+after phase 'none':  working set 126,078,976 B ( 120.2 MiB) | peak 138,383,360 B ( 132.0 MiB) | private  100.5 MiB
+repeated scans: 2000 (cycling 500 / 1,000 / 2,000 / 5,000 chars), sampling every 500
+  after   500 scans:    working set 132,005,888 B ( 125.9 MiB) | peak 142,188,544 B ( 135.6 MiB) | private  122.3 MiB
+  after  1000 scans:    working set 132,202,496 B ( 126.1 MiB) | peak 142,188,544 B ( 135.6 MiB) | private  122.3 MiB
+  after  1500 scans:    working set 136,470,528 B ( 130.1 MiB) | peak 142,262,272 B ( 135.7 MiB) | private  126.3 MiB
+  after  2000 scans:    working set 132,521,984 B ( 126.4 MiB) | peak 142,413,824 B ( 135.8 MiB) | private  122.5 MiB
+END:                     working set 132,521,984 B ( 126.4 MiB) | peak 142,413,824 B ( 135.8 MiB) | private  122.5 MiB
+peak 142,413,824 B vs limit 150,000,000 B (143.05 MiB): within by -7,586,176 B
+
+=== C. same, 8,000 scans: does anything keep growing?
+pinned to CPU 0
+before engine, before cpu-model call: working set  26,857,472 B (  25.6 MiB) | peak  26,857,472 B (  25.6 MiB) | private   16.4 MiB
+after engine load:       working set 126,656,512 B ( 120.8 MiB) | peak 137,981,952 B ( 131.6 MiB) | private  101.2 MiB
+after phase 'none':  working set 126,656,512 B ( 120.8 MiB) | peak 137,981,952 B ( 131.6 MiB) | private  101.2 MiB
+repeated scans: 8000 (cycling 500 / 1,000 / 2,000 / 5,000 chars), sampling every 1000
+  after  1000 scans:    working set 133,758,976 B ( 127.6 MiB) | peak 141,869,056 B ( 135.3 MiB) | private  123.7 MiB
+  after  2000 scans:    working set 129,757,184 B ( 123.7 MiB) | peak 141,869,056 B ( 135.3 MiB) | private  120.3 MiB
+  after  3000 scans:    working set 131,837,952 B ( 125.7 MiB) | peak 141,869,056 B ( 135.3 MiB) | private  122.0 MiB
+  after  4000 scans:    working set 134,860,800 B ( 128.6 MiB) | peak 141,869,056 B ( 135.3 MiB) | private  124.8 MiB
+  after  5000 scans:    working set 132,202,496 B ( 126.1 MiB) | peak 142,102,528 B ( 135.5 MiB) | private  122.8 MiB
+  after  6000 scans:    working set 132,247,552 B ( 126.1 MiB) | peak 142,102,528 B ( 135.5 MiB) | private  122.8 MiB
+  after  7000 scans:    working set 131,969,024 B ( 125.9 MiB) | peak 142,102,528 B ( 135.5 MiB) | private  122.8 MiB
+  after  8000 scans:    working set 135,426,048 B ( 129.2 MiB) | peak 142,102,528 B ( 135.5 MiB) | private  125.4 MiB
+END:                     working set 135,426,048 B ( 129.2 MiB) | peak 142,102,528 B ( 135.5 MiB) | private  125.4 MiB
+peak 142,102,528 B vs limit 150,000,000 B (143.05 MiB): within by -7,897,472 B
+
+=== D. same as B but NO memory reads between scans
+pinned to CPU 0
+before engine, before cpu-model call: working set  26,660,864 B (  25.4 MiB) | peak  26,660,864 B (  25.4 MiB) | private   16.0 MiB
+after engine load:       working set 127,057,920 B ( 121.2 MiB) | peak 138,055,680 B ( 131.7 MiB) | private  101.2 MiB
+after phase 'none':  working set 127,057,920 B ( 121.2 MiB) | peak 138,055,680 B ( 131.7 MiB) | private  101.2 MiB
+repeated scans: 2000 (cycling 500 / 1,000 / 2,000 / 5,000 chars), sampling off
+END:                     working set 132,558,848 B ( 126.4 MiB) | peak 141,975,552 B ( 135.4 MiB) | private  122.5 MiB
+peak 141,975,552 B vs limit 150,000,000 B (143.05 MiB): within by -8,024,448 B
+
+=== E. after the size sweep up to 10,000 chars
+pinned to CPU 0
+before engine, before cpu-model call: working set  27,095,040 B (  25.8 MiB) | peak  27,095,040 B (  25.8 MiB) | private   16.5 MiB
+after engine load:       working set 125,640,704 B ( 119.8 MiB) | peak 137,818,112 B ( 131.4 MiB) | private  100.5 MiB
+after phase 'sizes':  working set 127,717,376 B ( 121.8 MiB) | peak 141,524,992 B ( 135.0 MiB) | private  118.4 MiB
+repeated scans: 2000 (cycling 500 / 1,000 / 2,000 / 5,000 chars), sampling every 500
+  after   500 scans:    working set 131,923,968 B ( 125.8 MiB) | peak 142,094,336 B ( 135.5 MiB) | private  121.9 MiB
+  after  1000 scans:    working set 139,886,592 B ( 133.4 MiB) | peak 142,270,464 B ( 135.7 MiB) | private  129.4 MiB
+  after  1500 scans:    working set 139,968,512 B ( 133.5 MiB) | peak 142,270,464 B ( 135.7 MiB) | private  129.4 MiB
+  after  2000 scans:    working set 132,472,832 B ( 126.3 MiB) | peak 142,270,464 B ( 135.7 MiB) | private  122.7 MiB
+END:                     working set 132,472,832 B ( 126.3 MiB) | peak 142,270,464 B ( 135.7 MiB) | private  122.7 MiB
+peak 142,270,464 B vs limit 150,000,000 B (143.05 MiB): within by -7,729,536 B
+
+=== F. after 100,000-char inputs of several shapes
+pinned to CPU 0
+before engine, before cpu-model call: working set  27,045,888 B (  25.8 MiB) | peak  27,045,888 B (  25.8 MiB) | private   16.6 MiB
+after engine load:       working set 125,984,768 B ( 120.1 MiB) | peak 137,801,728 B ( 131.4 MiB) | private  100.6 MiB
+after phase 'big':  working set 135,323,648 B ( 129.1 MiB) | peak 140,406,784 B ( 133.9 MiB) | private  126.8 MiB
+repeated scans: 2000 (cycling 500 / 1,000 / 2,000 / 5,000 chars), sampling every 500
+  after   500 scans:    working set 137,277,440 B ( 130.9 MiB) | peak 146,481,152 B ( 139.7 MiB) | private  127.3 MiB
+  after  1000 scans:    working set 137,252,864 B ( 130.9 MiB) | peak 146,481,152 B ( 139.7 MiB) | private  127.4 MiB
+  after  1500 scans:    working set 136,966,144 B ( 130.6 MiB) | peak 146,563,072 B ( 139.8 MiB) | private  127.0 MiB
+  after  2000 scans:    working set 134,598,656 B ( 128.4 MiB) | peak 146,747,392 B ( 139.9 MiB) | private  124.3 MiB
+END:                     working set 134,598,656 B ( 128.4 MiB) | peak 146,747,392 B ( 139.9 MiB) | private  124.3 MiB
+peak 146,747,392 B vs limit 150,000,000 B (143.05 MiB): within by -3,252,608 B
+
+=== G1. replica of the whole benchmark's phases (no measurement overhead), then 2,000 repeated scans
+pinned to CPU 0
+before engine, before cpu-model call: working set  26,976,256 B (  25.7 MiB) | peak  26,976,256 B (  25.7 MiB) | private   16.4 MiB
+after engine load:       working set 127,062,016 B ( 121.2 MiB) | peak 138,055,680 B ( 131.7 MiB) | private  101.5 MiB
+after phase 'benchmark':  working set 137,494,528 B ( 131.1 MiB) | peak 141,873,152 B ( 135.3 MiB) | private  126.8 MiB
+repeated scans: 2000 (cycling 500 / 1,000 / 2,000 / 5,000 chars), sampling every 1000
+  after  1000 scans:    working set 137,412,608 B ( 131.0 MiB) | peak 147,402,752 B ( 140.6 MiB) | private  127.4 MiB
+  after  2000 scans:    working set 145,047,552 B ( 138.3 MiB) | peak 147,402,752 B ( 140.6 MiB) | private  134.4 MiB
+END:                     working set 145,047,552 B ( 138.3 MiB) | peak 147,402,752 B ( 140.6 MiB) | private  134.4 MiB
+peak 147,402,752 B vs limit 150,000,000 B (143.05 MiB): within by -2,597,248 B
+
+=== G2. replica of the whole benchmark's phases (no measurement overhead), then 2,000 repeated scans
+pinned to CPU 0
+before engine, before cpu-model call: working set  26,984,448 B (  25.7 MiB) | peak  26,984,448 B (  25.7 MiB) | private   16.4 MiB
+after engine load:       working set 126,726,144 B ( 120.9 MiB) | peak 138,047,488 B ( 131.7 MiB) | private  101.2 MiB
+after phase 'benchmark':  working set 136,400,896 B ( 130.1 MiB) | peak 141,742,080 B ( 135.2 MiB) | private  125.8 MiB
+repeated scans: 2000 (cycling 500 / 1,000 / 2,000 / 5,000 chars), sampling every 1000
+  after  1000 scans:    working set 136,704,000 B ( 130.4 MiB) | peak 145,973,248 B ( 139.2 MiB) | private  127.8 MiB
+  after  2000 scans:    working set 143,269,888 B ( 136.6 MiB) | peak 146,493,440 B ( 139.7 MiB) | private  133.2 MiB
+END:                     working set 143,269,888 B ( 136.6 MiB) | peak 146,493,440 B ( 139.7 MiB) | private  133.2 MiB
+peak 146,493,440 B vs limit 150,000,000 B (143.05 MiB): within by -3,506,560 B

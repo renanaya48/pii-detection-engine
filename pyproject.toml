@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pii-engine"
+version = "0.1.0"
+description = "Proof-of-concept PII detection engine (regex/checksum patterns + spaCy NER)"
+requires-python = ">=3.10"
+dependencies = [
+    "spacy>=3.8,<3.9",
+    "regex>=2024.0",
+    "phonenumbers>=9.0.43,<9.1",  # pinned: completeness detection reads a private matcher attribute
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "psutil>=5.9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]  # lets tests import the evaluation/ package from the repo root
+addopts = "-q"

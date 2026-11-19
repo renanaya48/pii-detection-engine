@@ -1,0 +1,3234 @@
+{
+  "manifest": {
+    "composition_note": "Purposive sample, NOT representative traffic. Roughly two thirds of the prompts contain names and one third do not; that ratio was chosen by the authors, so precision and false-alarm figures depend on it. Prompts are correctly cased by design, which is an assumption about typical input: real prompts are often lowercase and informal (see the WNUT-17 results). Written by the assistant (author) and contributed by the project owner (user); a few famous names are included.",
+    "counts": {
+      "by_source": {
+        "author": 158,
+        "user": 30
+      },
+      "person_mentions": 148,
+      "person_names_in_both_sources": 2,
+      "records": 188,
+      "single_word_person_mentions": 12,
+      "with_person": 126,
+      "without_person": 62
+    },
+    "created": "2026-11-18T21:15:27+00:00",
+    "data": {
+      "prompts.jsonl": "2a9d6081bbde2cdcc8674852350a2c5b006eda7e3671ac31cd4deac8b3d66e5b"
+    },
+    "frozen_engine": {
+      "engine_source": "e4e7481816f1055879bad1b9166c25ae5f2edc5df6425a9c891dbaaa5da6fa77",
+      "freeze_id": "315b27c4a574"
+    },
+    "name": "prompts: purposive, well-cased",
+    "sources": {
+      "author": "e48969e82b7fd2ba00eeffb42c2ce31e97a4df082c2f18eb5133b40dfdb57bb1",
+      "user": "341d2865993c73666a30234e6913b2b51d36e671cda1d28b0173affc2f82755f"
+    },
+    "status": "built, not yet scored"
+  },
+  "result": {
+    "records": 188,
+    "scope": [
+      "PERSON",
+      "EMAIL",
+      "PHONE",
+      "CREDIT_CARD"
+    ],
+    "variants": {
+      "full-balanced": {
+        "types": {
+          "PERSON": {
+            "gold": 148,
+            "pred": 131,
+            "exact_tp": 120,
+            "precision": 0.916030534351145,
+            "recall": 0.8108108108108109,
+            "f1": 0.8602150537634409,
+            "coverage_recall": 0.8378378378378378,
+            "coverage_recall_any_type": 0.8378378378378378,
+            "overlap_precision": 0.9618320610687023,
+            "excess_rate": 0.0385793018983466,
+            "over_marking": 0.8789020452099031,
+            "false_positives": 11,
+            "false_negatives": 28,
+            "ci95": {
+              "precision": [
+                0.8642857142857143,
+                0.9577464788732394
+              ],
+              "recall": [
+                0.7450980392156863,
+                0.8732394366197183
+              ],
+              "f1": [
+                0.8097165991902834,
+                0.9078498293515358
+              ],
+              "coverage_recall": [
+                0.7777777777777778,
+                0.8978102189781022
+              ]
+            }
+          },
+          "EMAIL": {
+            "gold": 2,
+            "pred": 2,
+            "exact_tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "PHONE": {
+            "gold": 3,
+            "pred": 3,
+            "exact_tp": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "CREDIT_CARD": {
+            "gold": 1,
+            "pred": 1,
+            "exact_tp": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "ALL": {
+            "gold": 154,
+            "pred": 137,
+            "exact_tp": 126,
+            "precision": 0.9197080291970803,
+            "recall": 0.8181818181818182,
+            "f1": 0.865979381443299,
+            "coverage_recall": 0.8441558441558441,
+            "coverage_recall_any_type": 0.8441558441558441,
+            "overlap_precision": 0.9635036496350365,
+            "excess_rate": 0.03553299492385787,
+            "over_marking": 0.8873873873873874,
+            "false_positives": 11,
+            "false_negatives": 28,
+            "ci95": {
+              "precision": [
+                0.8709677419354839,
+                0.9594594594594594
+              ],
+              "recall": [
+                0.7569444444444444,
+                0.8783783783783784
+              ],
+              "f1": [
+                0.8195488721804511,
+                0.9104477611940298
+              ],
+              "coverage_recall": [
+                0.7861635220125787,
+                0.900709219858156
+              ]
+            }
+          }
+        },
+        "status": {
+          "complete": 185,
+          "partial": 3
+        },
+        "groups": {
+          "names_author": {
+            "records": 106,
+            "status": {
+              "complete": 103,
+              "partial": 3
+            },
+            "types": {
+              "PERSON": {
+                "gold": 125,
+                "pred": 109,
+                "exact_tp": 102,
+                "precision": 0.9357798165137615,
+                "recall": 0.816,
+                "f1": 0.8717948717948718,
+                "coverage_recall": 0.848,
+                "coverage_recall_any_type": 0.848,
+                "overlap_precision": 0.9908256880733946,
+                "excess_rate": 0.015362106803218726,
+                "over_marking": 0.8695928753180662,
+                "false_positives": 7,
+                "false_negatives": 23
+              },
+              "EMAIL": {
+                "gold": 2,
+                "pred": 2,
+                "exact_tp": 2,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "PHONE": {
+                "gold": 3,
+                "pred": 3,
+                "exact_tp": 3,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "CREDIT_CARD": {
+                "gold": 1,
+                "pred": 1,
+                "exact_tp": 1,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 131,
+              "pred": 115,
+              "exact_tp": 108,
+              "precision": 0.9391304347826087,
+              "recall": 0.8244274809160306,
+              "f1": 0.8780487804878049,
+              "coverage_recall": 0.8549618320610687,
+              "coverage_recall_any_type": 0.8549618320610687,
+              "overlap_precision": 0.991304347826087,
+              "excess_rate": 0.013934970139349702,
+              "over_marking": 0.8802570093457944,
+              "false_positives": 7,
+              "false_negatives": 23
+            }
+          },
+          "negative_author": {
+            "records": 52,
+            "status": {
+              "complete": 52
+            },
+            "types": {
+              "PERSON": {
+                "gold": 0,
+                "pred": 3,
+                "exact_tp": 0,
+                "precision": 0.0,
+                "recall": null,
+                "f1": 0.0,
+                "coverage_recall": null,
+                "coverage_recall_any_type": null,
+                "overlap_precision": 0.0,
+                "excess_rate": 1.0,
+                "over_marking": null,
+                "false_positives": 3,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 0,
+              "pred": 3,
+              "exact_tp": 0,
+              "precision": 0.0,
+              "recall": null,
+              "f1": 0.0,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": 0.0,
+              "excess_rate": 1.0,
+              "over_marking": null,
+              "false_positives": 3,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 0.8181074447777474,
+              "findings": 3,
+              "records_with_findings": 3,
+              "by_type": {
+                "PERSON": 3
+              }
+            }
+          },
+          "names_user": {
+            "records": 20,
+            "status": {
+              "complete": 20
+            },
+            "types": {
+              "PERSON": {
+                "gold": 23,
+                "pred": 18,
+                "exact_tp": 18,
+                "precision": 1.0,
+                "recall": 0.782608695652174,
+                "f1": 0.8780487804878049,
+                "coverage_recall": 0.782608695652174,
+                "coverage_recall_any_type": 0.782608695652174,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 0.7832167832167832,
+                "false_positives": 0,
+                "false_negatives": 5
+              }
+            },
+            "all": {
+              "gold": 23,
+              "pred": 18,
+              "exact_tp": 18,
+              "precision": 1.0,
+              "recall": 0.782608695652174,
+              "f1": 0.8780487804878049,
+              "coverage_recall": 0.782608695652174,
+              "coverage_recall_any_type": 0.782608695652174,
+              "overlap_precision": 1.0,
+              "excess_rate": 0.0,
+              "over_marking": 0.7832167832167832,
+              "false_positives": 0,
+              "false_negatives": 5
+            }
+          },
+          "negative_user": {
+            "records": 10,
+            "status": {
+              "complete": 10
+            },
+            "types": {
+              "PERSON": {
+                "gold": 0,
+                "pred": 1,
+                "exact_tp": 0,
+                "precision": 0.0,
+                "recall": null,
+                "f1": 0.0,
+                "coverage_recall": null,
+                "coverage_recall_any_type": null,
+                "overlap_precision": 0.0,
+                "excess_rate": 1.0,
+                "over_marking": null,
+                "false_positives": 1,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 0,
+              "pred": 1,
+              "exact_tp": 0,
+              "precision": 0.0,
+              "recall": null,
+              "f1": 0.0,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": 0.0,
+              "excess_rate": 1.0,
+              "over_marking": null,
+              "false_positives": 1,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 1.5082956259426847,
+              "findings": 1,
+              "records_with_findings": 1,
+              "by_type": {
+                "PERSON": 1
+              }
+            }
+          }
+        }
+      },
+      "full-strict": {
+        "types": {
+          "PERSON": {
+            "gold": 148,
+            "pred": 131,
+            "exact_tp": 120,
+            "precision": 0.916030534351145,
+            "recall": 0.8108108108108109,
+            "f1": 0.8602150537634409,
+            "coverage_recall": 0.8378378378378378,
+            "coverage_recall_any_type": 0.8378378378378378,
+            "overlap_precision": 0.9618320610687023,
+            "excess_rate": 0.0385793018983466,
+            "over_marking": 0.8789020452099031,
+            "false_positives": 11,
+            "false_negatives": 28,
+            "ci95": {
+              "precision": [
+                0.8642857142857143,
+                0.9577464788732394
+              ],
+              "recall": [
+                0.7450980392156863,
+                0.8732394366197183
+              ],
+              "f1": [
+                0.8097165991902834,
+                0.9078498293515358
+              ],
+              "coverage_recall": [
+                0.7777777777777778,
+                0.8978102189781022
+              ]
+            }
+          },
+          "EMAIL": {
+            "gold": 2,
+            "pred": 2,
+            "exact_tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "PHONE": {
+            "gold": 3,
+            "pred": 3,
+            "exact_tp": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "CREDIT_CARD": {
+            "gold": 1,
+            "pred": 1,
+            "exact_tp": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "ALL": {
+            "gold": 154,
+            "pred": 137,
+            "exact_tp": 126,
+            "precision": 0.9197080291970803,
+            "recall": 0.8181818181818182,
+            "f1": 0.865979381443299,
+            "coverage_recall": 0.8441558441558441,
+            "coverage_recall_any_type": 0.8441558441558441,
+            "overlap_precision": 0.9635036496350365,
+            "excess_rate": 0.03553299492385787,
+            "over_marking": 0.8873873873873874,
+            "false_positives": 11,
+            "false_negatives": 28,
+            "ci95": {
+              "precision": [
+                0.8709677419354839,
+                0.9594594594594594
+              ],
+              "recall": [
+                0.7569444444444444,
+                0.8783783783783784
+              ],
+              "f1": [
+                0.8195488721804511,
+                0.9104477611940298
+              ],
+              "coverage_recall": [
+                0.7861635220125787,
+                0.900709219858156
+              ]
+            }
+          }
+        },
+        "status": {
+          "complete": 185,
+          "partial": 3
+        },
+        "groups": {
+          "names_author": {
+            "records": 106,
+            "status": {
+              "complete": 103,
+              "partial": 3
+            },
+            "types": {
+              "PERSON": {
+                "gold": 125,
+                "pred": 109,
+                "exact_tp": 102,
+                "precision": 0.9357798165137615,
+                "recall": 0.816,
+                "f1": 0.8717948717948718,
+                "coverage_recall": 0.848,
+                "coverage_recall_any_type": 0.848,
+                "overlap_precision": 0.9908256880733946,
+                "excess_rate": 0.015362106803218726,
+                "over_marking": 0.8695928753180662,
+                "false_positives": 7,
+                "false_negatives": 23
+              },
+              "EMAIL": {
+                "gold": 2,
+                "pred": 2,
+                "exact_tp": 2,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "PHONE": {
+                "gold": 3,
+                "pred": 3,
+                "exact_tp": 3,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "CREDIT_CARD": {
+                "gold": 1,
+                "pred": 1,
+                "exact_tp": 1,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 131,
+              "pred": 115,
+              "exact_tp": 108,
+              "precision": 0.9391304347826087,
+              "recall": 0.8244274809160306,
+              "f1": 0.8780487804878049,
+              "coverage_recall": 0.8549618320610687,
+              "coverage_recall_any_type": 0.8549618320610687,
+              "overlap_precision": 0.991304347826087,
+              "excess_rate": 0.013934970139349702,
+              "over_marking": 0.8802570093457944,
+              "false_positives": 7,
+              "false_negatives": 23
+            }
+          },
+          "negative_author": {
+            "records": 52,
+            "status": {
+              "complete": 52
+            },
+            "types": {
+              "PERSON": {
+                "gold": 0,
+                "pred": 3,
+                "exact_tp": 0,
+                "precision": 0.0,
+                "recall": null,
+                "f1": 0.0,
+                "coverage_recall": null,
+                "coverage_recall_any_type": null,
+                "overlap_precision": 0.0,
+                "excess_rate": 1.0,
+                "over_marking": null,
+                "false_positives": 3,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 0,
+              "pred": 3,
+              "exact_tp": 0,
+              "precision": 0.0,
+              "recall": null,
+              "f1": 0.0,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": 0.0,
+              "excess_rate": 1.0,
+              "over_marking": null,
+              "false_positives": 3,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 0.8181074447777474,
+              "findings": 3,
+              "records_with_findings": 3,
+              "by_type": {
+                "PERSON": 3
+              }
+            }
+          },
+          "names_user": {
+            "records": 20,
+            "status": {
+              "complete": 20
+            },
+            "types": {
+              "PERSON": {
+                "gold": 23,
+                "pred": 18,
+                "exact_tp": 18,
+                "precision": 1.0,
+                "recall": 0.782608695652174,
+                "f1": 0.8780487804878049,
+                "coverage_recall": 0.782608695652174,
+                "coverage_recall_any_type": 0.782608695652174,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 0.7832167832167832,
+                "false_positives": 0,
+                "false_negatives": 5
+              }
+            },
+            "all": {
+              "gold": 23,
+              "pred": 18,
+              "exact_tp": 18,
+              "precision": 1.0,
+              "recall": 0.782608695652174,
+              "f1": 0.8780487804878049,
+              "coverage_recall": 0.782608695652174,
+              "coverage_recall_any_type": 0.782608695652174,
+              "overlap_precision": 1.0,
+              "excess_rate": 0.0,
+              "over_marking": 0.7832167832167832,
+              "false_positives": 0,
+              "false_negatives": 5
+            }
+          },
+          "negative_user": {
+            "records": 10,
+            "status": {
+              "complete": 10
+            },
+            "types": {
+              "PERSON": {
+                "gold": 0,
+                "pred": 1,
+                "exact_tp": 0,
+                "precision": 0.0,
+                "recall": null,
+                "f1": 0.0,
+                "coverage_recall": null,
+                "coverage_recall_any_type": null,
+                "overlap_precision": 0.0,
+                "excess_rate": 1.0,
+                "over_marking": null,
+                "false_positives": 1,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 0,
+              "pred": 1,
+              "exact_tp": 0,
+              "precision": 0.0,
+              "recall": null,
+              "f1": 0.0,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": 0.0,
+              "excess_rate": 1.0,
+              "over_marking": null,
+              "false_positives": 1,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 1.5082956259426847,
+              "findings": 1,
+              "records_with_findings": 1,
+              "by_type": {
+                "PERSON": 1
+              }
+            }
+          }
+        }
+      },
+      "balanced-two-word-rule": {
+        "types": {
+          "PERSON": {
+            "gold": 148,
+            "pred": 120,
+            "exact_tp": 114,
+            "precision": 0.95,
+            "recall": 0.7702702702702703,
+            "f1": 0.8507462686567164,
+            "coverage_recall": 0.7972972972972973,
+            "coverage_recall_any_type": 0.7972972972972973,
+            "overlap_precision": 0.9833333333333333,
+            "excess_rate": 0.026231605886116442,
+            "over_marking": 0.841227125941873,
+            "false_positives": 6,
+            "false_negatives": 34,
+            "ci95": {
+              "precision": [
+                0.9067796610169492,
+                0.984375
+              ],
+              "recall": [
+                0.6993006993006993,
+                0.8410596026490066
+              ],
+              "f1": [
+                0.7956989247311828,
+                0.900709219858156
+              ],
+              "coverage_recall": [
+                0.7294117647058823,
+                0.8641975308641975
+              ]
+            }
+          },
+          "EMAIL": {
+            "gold": 2,
+            "pred": 2,
+            "exact_tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "PHONE": {
+            "gold": 3,
+            "pred": 3,
+            "exact_tp": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "CREDIT_CARD": {
+            "gold": 1,
+            "pred": 1,
+            "exact_tp": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "ALL": {
+            "gold": 154,
+            "pred": 126,
+            "exact_tp": 120,
+            "precision": 0.9523809523809523,
+            "recall": 0.7792207792207793,
+            "f1": 0.8571428571428571,
+            "coverage_recall": 0.8051948051948052,
+            "coverage_recall_any_type": 0.8051948051948052,
+            "overlap_precision": 0.9841269841269841,
+            "excess_rate": 0.024075161479741633,
+            "over_marking": 0.8523523523523524,
+            "false_positives": 6,
+            "false_negatives": 34,
+            "ci95": {
+              "precision": [
+                0.9124087591240876,
+                0.9850746268656716
+              ],
+              "recall": [
+                0.7103448275862069,
+                0.8471337579617835
+              ],
+              "f1": [
+                0.8054607508532423,
+                0.9046153846153846
+              ],
+              "coverage_recall": [
+                0.7388535031847133,
+                0.868421052631579
+              ]
+            }
+          }
+        },
+        "status": {
+          "complete": 185,
+          "partial": 3
+        },
+        "groups": {
+          "names_author": {
+            "records": 106,
+            "status": {
+              "complete": 103,
+              "partial": 3
+            },
+            "types": {
+              "PERSON": {
+                "gold": 125,
+                "pred": 100,
+                "exact_tp": 96,
+                "precision": 0.96,
+                "recall": 0.768,
+                "f1": 0.8533333333333334,
+                "coverage_recall": 0.8,
+                "coverage_recall_any_type": 0.8,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0121765601217656,
+                "over_marking": 0.8358778625954199,
+                "false_positives": 4,
+                "false_negatives": 29
+              },
+              "EMAIL": {
+                "gold": 2,
+                "pred": 2,
+                "exact_tp": 2,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "PHONE": {
+                "gold": 3,
+                "pred": 3,
+                "exact_tp": 3,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "CREDIT_CARD": {
+                "gold": 1,
+                "pred": 1,
+                "exact_tp": 1,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 131,
+              "pred": 106,
+              "exact_tp": 102,
+              "precision": 0.9622641509433962,
+              "recall": 0.7786259541984732,
+              "f1": 0.8607594936708861,
+              "coverage_recall": 0.8091603053435115,
+              "coverage_recall_any_type": 0.8091603053435115,
+              "overlap_precision": 1.0,
+              "excess_rate": 0.011004126547455296,
+              "over_marking": 0.8492990654205608,
+              "false_positives": 4,
+              "false_negatives": 29
+            }
+          },
+          "negative_author": {
+            "records": 52,
+            "status": {
+              "complete": 52
+            },
+            "types": {
+              "PERSON": {
+                "gold": 0,
+                "pred": 1,
+                "exact_tp": 0,
+                "precision": 0.0,
+                "recall": null,
+                "f1": 0.0,
+                "coverage_recall": null,
+                "coverage_recall_any_type": null,
+                "overlap_precision": 0.0,
+                "excess_rate": 1.0,
+                "over_marking": null,
+                "false_positives": 1,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 0,
+              "pred": 1,
+              "exact_tp": 0,
+              "precision": 0.0,
+              "recall": null,
+              "f1": 0.0,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": 0.0,
+              "excess_rate": 1.0,
+              "over_marking": null,
+              "false_positives": 1,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 0.2727024815925825,
+              "findings": 1,
+              "records_with_findings": 1,
+              "by_type": {
+                "PERSON": 1
+              }
+            }
+          },
+          "names_user": {
+            "records": 20,
+            "status": {
+              "complete": 20
+            },
+            "types": {
+              "PERSON": {
+                "gold": 23,
+                "pred": 18,
+                "exact_tp": 18,
+                "precision": 1.0,
+                "recall": 0.782608695652174,
+                "f1": 0.8780487804878049,
+                "coverage_recall": 0.782608695652174,
+                "coverage_recall_any_type": 0.782608695652174,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 0.7832167832167832,
+                "false_positives": 0,
+                "false_negatives": 5
+              }
+            },
+            "all": {
+              "gold": 23,
+              "pred": 18,
+              "exact_tp": 18,
+              "precision": 1.0,
+              "recall": 0.782608695652174,
+              "f1": 0.8780487804878049,
+              "coverage_recall": 0.782608695652174,
+              "coverage_recall_any_type": 0.782608695652174,
+              "overlap_precision": 1.0,
+              "excess_rate": 0.0,
+              "over_marking": 0.7832167832167832,
+              "false_positives": 0,
+              "false_negatives": 5
+            }
+          },
+          "negative_user": {
+            "records": 10,
+            "status": {
+              "complete": 10
+            },
+            "types": {
+              "PERSON": {
+                "gold": 0,
+                "pred": 1,
+                "exact_tp": 0,
+                "precision": 0.0,
+                "recall": null,
+                "f1": 0.0,
+                "coverage_recall": null,
+                "coverage_recall_any_type": null,
+                "overlap_precision": 0.0,
+                "excess_rate": 1.0,
+                "over_marking": null,
+                "false_positives": 1,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 0,
+              "pred": 1,
+              "exact_tp": 0,
+              "precision": 0.0,
+              "recall": null,
+              "f1": 0.0,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": 0.0,
+              "excess_rate": 1.0,
+              "over_marking": null,
+              "false_positives": 1,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 1.5082956259426847,
+              "findings": 1,
+              "records_with_findings": 1,
+              "by_type": {
+                "PERSON": 1
+              }
+            }
+          }
+        }
+      },
+      "patterns-only": {
+        "types": {
+          "PERSON": {
+            "gold": 148,
+            "pred": 0,
+            "exact_tp": 0,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "coverage_recall": 0.0,
+            "coverage_recall_any_type": 0.0,
+            "overlap_precision": null,
+            "excess_rate": null,
+            "over_marking": 0.0,
+            "false_positives": 0,
+            "false_negatives": 148,
+            "ci95": {
+              "precision": null,
+              "recall": [
+                0.0,
+                0.0
+              ],
+              "f1": [
+                0.0,
+                0.0
+              ],
+              "coverage_recall": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "EMAIL": {
+            "gold": 2,
+            "pred": 2,
+            "exact_tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "PHONE": {
+            "gold": 3,
+            "pred": 3,
+            "exact_tp": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "CREDIT_CARD": {
+            "gold": 1,
+            "pred": 1,
+            "exact_tp": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "coverage_recall": 1.0,
+            "coverage_recall_any_type": 1.0,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 1.0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                1.0,
+                1.0
+              ],
+              "f1": [
+                1.0,
+                1.0
+              ],
+              "coverage_recall": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "ALL": {
+            "gold": 154,
+            "pred": 6,
+            "exact_tp": 6,
+            "precision": 1.0,
+            "recall": 0.03896103896103896,
+            "f1": 0.075,
+            "coverage_recall": 0.03896103896103896,
+            "coverage_recall_any_type": 0.03896103896103896,
+            "overlap_precision": 1.0,
+            "excess_rate": 0.0,
+            "over_marking": 0.07007007007007007,
+            "false_positives": 0,
+            "false_negatives": 148,
+            "ci95": {
+              "precision": [
+                1.0,
+                1.0
+              ],
+              "recall": [
+                0.012658227848101266,
+                0.07092198581560284
+              ],
+              "f1": [
+                0.025,
+                0.13245033112582782
+              ],
+              "coverage_recall": [
+                0.012658227848101266,
+                0.07092198581560284
+              ]
+            }
+          }
+        },
+        "status": {
+          "complete": 188
+        },
+        "groups": {
+          "names_author": {
+            "records": 106,
+            "status": {
+              "complete": 106
+            },
+            "types": {
+              "PERSON": {
+                "gold": 125,
+                "pred": 0,
+                "exact_tp": 0,
+                "precision": null,
+                "recall": 0.0,
+                "f1": 0.0,
+                "coverage_recall": 0.0,
+                "coverage_recall_any_type": 0.0,
+                "overlap_precision": null,
+                "excess_rate": null,
+                "over_marking": 0.0,
+                "false_positives": 0,
+                "false_negatives": 125
+              },
+              "EMAIL": {
+                "gold": 2,
+                "pred": 2,
+                "exact_tp": 2,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "PHONE": {
+                "gold": 3,
+                "pred": 3,
+                "exact_tp": 3,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "CREDIT_CARD": {
+                "gold": 1,
+                "pred": 1,
+                "exact_tp": 1,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "coverage_recall": 1.0,
+                "coverage_recall_any_type": 1.0,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 1.0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 131,
+              "pred": 6,
+              "exact_tp": 6,
+              "precision": 1.0,
+              "recall": 0.04580152671755725,
+              "f1": 0.08759124087591241,
+              "coverage_recall": 0.04580152671755725,
+              "coverage_recall_any_type": 0.04580152671755725,
+              "overlap_precision": 1.0,
+              "excess_rate": 0.0,
+              "over_marking": 0.08177570093457943,
+              "false_positives": 0,
+              "false_negatives": 125
+            }
+          },
+          "negative_author": {
+            "records": 52,
+            "status": {
+              "complete": 52
+            },
+            "types": {},
+            "all": {
+              "gold": 0,
+              "pred": 0,
+              "exact_tp": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": null,
+              "excess_rate": null,
+              "over_marking": null,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 0.0,
+              "findings": 0,
+              "records_with_findings": 0,
+              "by_type": {}
+            }
+          },
+          "names_user": {
+            "records": 20,
+            "status": {
+              "complete": 20
+            },
+            "types": {
+              "PERSON": {
+                "gold": 23,
+                "pred": 0,
+                "exact_tp": 0,
+                "precision": null,
+                "recall": 0.0,
+                "f1": 0.0,
+                "coverage_recall": 0.0,
+                "coverage_recall_any_type": 0.0,
+                "overlap_precision": null,
+                "excess_rate": null,
+                "over_marking": 0.0,
+                "false_positives": 0,
+                "false_negatives": 23
+              }
+            },
+            "all": {
+              "gold": 23,
+              "pred": 0,
+              "exact_tp": 0,
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "coverage_recall": 0.0,
+              "coverage_recall_any_type": 0.0,
+              "overlap_precision": null,
+              "excess_rate": null,
+              "over_marking": 0.0,
+              "false_positives": 0,
+              "false_negatives": 23
+            }
+          },
+          "negative_user": {
+            "records": 10,
+            "status": {
+              "complete": 10
+            },
+            "types": {},
+            "all": {
+              "gold": 0,
+              "pred": 0,
+              "exact_tp": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": null,
+              "excess_rate": null,
+              "over_marking": null,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 0.0,
+              "findings": 0,
+              "records_with_findings": 0,
+              "by_type": {}
+            }
+          }
+        }
+      },
+      "ner-only": {
+        "types": {
+          "PERSON": {
+            "gold": 148,
+            "pred": 131,
+            "exact_tp": 120,
+            "precision": 0.916030534351145,
+            "recall": 0.8108108108108109,
+            "f1": 0.8602150537634409,
+            "coverage_recall": 0.8378378378378378,
+            "coverage_recall_any_type": 0.8378378378378378,
+            "overlap_precision": 0.9618320610687023,
+            "excess_rate": 0.0385793018983466,
+            "over_marking": 0.8789020452099031,
+            "false_positives": 11,
+            "false_negatives": 28,
+            "ci95": {
+              "precision": [
+                0.8642857142857143,
+                0.9577464788732394
+              ],
+              "recall": [
+                0.7450980392156863,
+                0.8732394366197183
+              ],
+              "f1": [
+                0.8097165991902834,
+                0.9078498293515358
+              ],
+              "coverage_recall": [
+                0.7777777777777778,
+                0.8978102189781022
+              ]
+            }
+          },
+          "EMAIL": {
+            "gold": 2,
+            "pred": 0,
+            "exact_tp": 0,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "coverage_recall": 0.0,
+            "coverage_recall_any_type": 0.0,
+            "overlap_precision": null,
+            "excess_rate": null,
+            "over_marking": 0.0,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "ci95": {
+              "precision": null,
+              "recall": [
+                0.0,
+                0.0
+              ],
+              "f1": [
+                0.0,
+                0.0
+              ],
+              "coverage_recall": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "PHONE": {
+            "gold": 3,
+            "pred": 0,
+            "exact_tp": 0,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "coverage_recall": 0.0,
+            "coverage_recall_any_type": 0.0,
+            "overlap_precision": null,
+            "excess_rate": null,
+            "over_marking": 0.0,
+            "false_positives": 0,
+            "false_negatives": 3,
+            "ci95": {
+              "precision": null,
+              "recall": [
+                0.0,
+                0.0
+              ],
+              "f1": [
+                0.0,
+                0.0
+              ],
+              "coverage_recall": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "CREDIT_CARD": {
+            "gold": 1,
+            "pred": 0,
+            "exact_tp": 0,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "coverage_recall": 0.0,
+            "coverage_recall_any_type": 0.0,
+            "overlap_precision": null,
+            "excess_rate": null,
+            "over_marking": 0.0,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "ci95": {
+              "precision": null,
+              "recall": [
+                0.0,
+                0.0
+              ],
+              "f1": [
+                0.0,
+                0.0
+              ],
+              "coverage_recall": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ALL": {
+            "gold": 154,
+            "pred": 131,
+            "exact_tp": 120,
+            "precision": 0.916030534351145,
+            "recall": 0.7792207792207793,
+            "f1": 0.8421052631578947,
+            "coverage_recall": 0.8051948051948052,
+            "coverage_recall_any_type": 0.8051948051948052,
+            "overlap_precision": 0.9618320610687023,
+            "excess_rate": 0.0385793018983466,
+            "over_marking": 0.8173173173173173,
+            "false_positives": 11,
+            "false_negatives": 34,
+            "ci95": {
+              "precision": [
+                0.8642857142857143,
+                0.9577464788732394
+              ],
+              "recall": [
+                0.7092198581560284,
+                0.847682119205298
+              ],
+              "f1": [
+                0.7854785478547854,
+                0.8936170212765957
+              ],
+              "coverage_recall": [
+                0.7419354838709677,
+                0.8719512195121951
+              ]
+            }
+          }
+        },
+        "status": {
+          "complete": 185,
+          "partial": 3
+        },
+        "groups": {
+          "names_author": {
+            "records": 106,
+            "status": {
+              "complete": 103,
+              "partial": 3
+            },
+            "types": {
+              "PERSON": {
+                "gold": 125,
+                "pred": 109,
+                "exact_tp": 102,
+                "precision": 0.9357798165137615,
+                "recall": 0.816,
+                "f1": 0.8717948717948718,
+                "coverage_recall": 0.848,
+                "coverage_recall_any_type": 0.848,
+                "overlap_precision": 0.9908256880733946,
+                "excess_rate": 0.015362106803218726,
+                "over_marking": 0.8695928753180662,
+                "false_positives": 7,
+                "false_negatives": 23
+              },
+              "EMAIL": {
+                "gold": 2,
+                "pred": 0,
+                "exact_tp": 0,
+                "precision": null,
+                "recall": 0.0,
+                "f1": 0.0,
+                "coverage_recall": 0.0,
+                "coverage_recall_any_type": 0.0,
+                "overlap_precision": null,
+                "excess_rate": null,
+                "over_marking": 0.0,
+                "false_positives": 0,
+                "false_negatives": 2
+              },
+              "PHONE": {
+                "gold": 3,
+                "pred": 0,
+                "exact_tp": 0,
+                "precision": null,
+                "recall": 0.0,
+                "f1": 0.0,
+                "coverage_recall": 0.0,
+                "coverage_recall_any_type": 0.0,
+                "overlap_precision": null,
+                "excess_rate": null,
+                "over_marking": 0.0,
+                "false_positives": 0,
+                "false_negatives": 3
+              },
+              "CREDIT_CARD": {
+                "gold": 1,
+                "pred": 0,
+                "exact_tp": 0,
+                "precision": null,
+                "recall": 0.0,
+                "f1": 0.0,
+                "coverage_recall": 0.0,
+                "coverage_recall_any_type": 0.0,
+                "overlap_precision": null,
+                "excess_rate": null,
+                "over_marking": 0.0,
+                "false_positives": 0,
+                "false_negatives": 1
+              }
+            },
+            "all": {
+              "gold": 131,
+              "pred": 109,
+              "exact_tp": 102,
+              "precision": 0.9357798165137615,
+              "recall": 0.7786259541984732,
+              "f1": 0.85,
+              "coverage_recall": 0.8091603053435115,
+              "coverage_recall_any_type": 0.8091603053435115,
+              "overlap_precision": 0.9908256880733946,
+              "excess_rate": 0.015362106803218726,
+              "over_marking": 0.798481308411215,
+              "false_positives": 7,
+              "false_negatives": 29
+            }
+          },
+          "negative_author": {
+            "records": 52,
+            "status": {
+              "complete": 52
+            },
+            "types": {
+              "PERSON": {
+                "gold": 0,
+                "pred": 3,
+                "exact_tp": 0,
+                "precision": 0.0,
+                "recall": null,
+                "f1": 0.0,
+                "coverage_recall": null,
+                "coverage_recall_any_type": null,
+                "overlap_precision": 0.0,
+                "excess_rate": 1.0,
+                "over_marking": null,
+                "false_positives": 3,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 0,
+              "pred": 3,
+              "exact_tp": 0,
+              "precision": 0.0,
+              "recall": null,
+              "f1": 0.0,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": 0.0,
+              "excess_rate": 1.0,
+              "over_marking": null,
+              "false_positives": 3,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 0.8181074447777474,
+              "findings": 3,
+              "records_with_findings": 3,
+              "by_type": {
+                "PERSON": 3
+              }
+            }
+          },
+          "names_user": {
+            "records": 20,
+            "status": {
+              "complete": 20
+            },
+            "types": {
+              "PERSON": {
+                "gold": 23,
+                "pred": 18,
+                "exact_tp": 18,
+                "precision": 1.0,
+                "recall": 0.782608695652174,
+                "f1": 0.8780487804878049,
+                "coverage_recall": 0.782608695652174,
+                "coverage_recall_any_type": 0.782608695652174,
+                "overlap_precision": 1.0,
+                "excess_rate": 0.0,
+                "over_marking": 0.7832167832167832,
+                "false_positives": 0,
+                "false_negatives": 5
+              }
+            },
+            "all": {
+              "gold": 23,
+              "pred": 18,
+              "exact_tp": 18,
+              "precision": 1.0,
+              "recall": 0.782608695652174,
+              "f1": 0.8780487804878049,
+              "coverage_recall": 0.782608695652174,
+              "coverage_recall_any_type": 0.782608695652174,
+              "overlap_precision": 1.0,
+              "excess_rate": 0.0,
+              "over_marking": 0.7832167832167832,
+              "false_positives": 0,
+              "false_negatives": 5
+            }
+          },
+          "negative_user": {
+            "records": 10,
+            "status": {
+              "complete": 10
+            },
+            "types": {
+              "PERSON": {
+                "gold": 0,
+                "pred": 1,
+                "exact_tp": 0,
+                "precision": 0.0,
+                "recall": null,
+                "f1": 0.0,
+                "coverage_recall": null,
+                "coverage_recall_any_type": null,
+                "overlap_precision": 0.0,
+                "excess_rate": 1.0,
+                "over_marking": null,
+                "false_positives": 1,
+                "false_negatives": 0
+              }
+            },
+            "all": {
+              "gold": 0,
+              "pred": 1,
+              "exact_tp": 0,
+              "precision": 0.0,
+              "recall": null,
+              "f1": 0.0,
+              "coverage_recall": null,
+              "coverage_recall_any_type": null,
+              "overlap_precision": 0.0,
+              "excess_rate": 1.0,
+              "over_marking": null,
+              "false_positives": 1,
+              "false_negatives": 0
+            },
+            "false_positives": {
+              "per_1000_chars": 1.5082956259426847,
+              "findings": 1,
+              "records_with_findings": 1,
+              "by_type": {
+                "PERSON": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "errors": {
+      "full-balanced": {
+        "false_negatives": [
+          {
+            "id": "prompts-author-008",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "e grammar in this email: \"Dear Dr. [[Katarzyna Nowak]], I am writing to ask about the sta"
+          },
+          {
+            "id": "prompts-author-013",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Our new hire, [[Anne-Marie Dupont]], starts on the 3rd. Draft a welcom"
+          },
+          {
+            "id": "prompts-author-021",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell [[Michael]] that the meeting has moved to 3 p."
+          },
+          {
+            "id": "prompts-author-022",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Grace]] asked whether the report could be "
+          },
+          {
+            "id": "prompts-author-030",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The support ticket was opened by [[Jamal Washington]] and escalated to Ingrid Johansson "
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "oposes moving the launch to March, [[Soo-jin Park]] disagrees, and Amara Nwosu wants m"
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "March, Soo-jin Park disagrees, and [[Amara Nwosu]] wants more data."
+          },
+          {
+            "id": "prompts-author-039",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please send the minutes to [[Anders Eriksen]] at anders.eriksen@nordlys.example."
+          },
+          {
+            "id": "prompts-author-040",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "te my bio in the third person. I'm [[Thabo Mokoena]], a civil engineer based in Johanne"
+          },
+          {
+            "id": "prompts-author-046",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "u check the tone of this message? \"[[Priya]], I need the figures today, not tom"
+          },
+          {
+            "id": "prompts-author-047",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add [[Marta Kowalczyk]] as the emergency contact on the fo"
+          },
+          {
+            "id": "prompts-author-057",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a poem for [[Charlotte]] on her tenth birthday."
+          },
+          {
+            "id": "prompts-author-059",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ect the spelling in this caption: \"[[Jean-Luc Moreau]] accepting the award in Cannes.\""
+          },
+          {
+            "id": "prompts-author-064",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a short toast for Uncle [[Raymond]]'s seventieth birthday."
+          },
+          {
+            "id": "prompts-author-068",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "lease translate the greeting \"Dear [[Sofia Ricci]], thank you for your patience.\""
+          },
+          {
+            "id": "prompts-author-070",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Create a seating chart note: [[Olumide Bakare]] next to Hanne Vos, and Ji-ho Kim n"
+          },
+          {
+            "id": "prompts-author-071",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The package is for [[Tatiana Smirnova]]. Please confirm the address and ch"
+          },
+          {
+            "id": "prompts-author-073",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Explain to [[Francesca Bellini]] why the quote increased by fifteen"
+          },
+          {
+            "id": "prompts-author-080",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a polite decline to [[Victoria Hale]]'s invitation to speak at the summi"
+          },
+          {
+            "id": "prompts-author-083",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Notify [[Amélie Laurent]] that her order #77120 has shipped,"
+          },
+          {
+            "id": "prompts-author-087",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ine of a toast for Mira Kapoor and [[Arjun Desai]]'s anniversary."
+          },
+          {
+            "id": "prompts-author-088",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell [[Carla]] and Diego that the keys are under "
+          },
+          {
+            "id": "prompts-author-091",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add [[Joon-woo Lee]] to the thank-you list for voluntee"
+          },
+          {
+            "id": "prompts-user-001",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Please draft an email to [[Alice Aremic]] asking her to confirm her availabi"
+          },
+          {
+            "id": "prompts-user-003",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "help me write a polite reminder to [[Sofia Mendes]] about the overdue invoice?"
+          },
+          {
+            "id": "prompts-user-009",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Draft a thank-you message to [[Chloe Laurent]] for helping resolve the support re"
+          },
+          {
+            "id": "prompts-user-019",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Write a handover note from [[Amara Nwosu]] to Victor Salazar covering the ope"
+          },
+          {
+            "id": "prompts-user-019",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": " handover note from Amara Nwosu to [[Victor Salazar]] covering the open support tickets."
+          }
+        ],
+        "false_positives": [
+          {
+            "id": "prompts-author-013",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "e-Marie Dupont, starts on the 3rd. [[Draft]] a welcome message for the whole de"
+          },
+          {
+            "id": "prompts-author-021",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Tell Michael]] that the meeting has moved to 3 p."
+          },
+          {
+            "id": "prompts-author-039",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please send the minutes to Anders [[Eriksen]] at anders.eriksen@nordlys.example."
+          },
+          {
+            "id": "prompts-author-047",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Add Marta Kowalczyk]] as the emergency contact on the fo"
+          },
+          {
+            "id": "prompts-author-087",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ine of a toast for Mira Kapoor and [[Arjun Desai's]] anniversary."
+          },
+          {
+            "id": "prompts-author-088",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Tell Carla]] and Diego that the keys are under "
+          },
+          {
+            "id": "prompts-author-091",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add Joon-woo [[Lee]] to the thank-you list for voluntee"
+          },
+          {
+            "id": "prompts-author-115",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": "Give me a recipe for [[Pad Thai]] that takes less than thirty minute"
+          },
+          {
+            "id": "prompts-author-138",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": " paragraph about the importance of [[Valentine]]'s Day for local florists."
+          },
+          {
+            "id": "prompts-author-148",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": "Write a short note to my [[Landlord]] asking when the heating will be fi"
+          },
+          {
+            "id": "prompts-user-030",
+            "group": "negative_user",
+            "type": "PERSON",
+            "text": "iew the headings Project Overview, [[Delivery Schedule]], and Budget Summary for consistenc"
+          }
+        ]
+      },
+      "full-strict": {
+        "false_negatives": [
+          {
+            "id": "prompts-author-008",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "e grammar in this email: \"Dear Dr. [[Katarzyna Nowak]], I am writing to ask about the sta"
+          },
+          {
+            "id": "prompts-author-013",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Our new hire, [[Anne-Marie Dupont]], starts on the 3rd. Draft a welcom"
+          },
+          {
+            "id": "prompts-author-021",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell [[Michael]] that the meeting has moved to 3 p."
+          },
+          {
+            "id": "prompts-author-022",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Grace]] asked whether the report could be "
+          },
+          {
+            "id": "prompts-author-030",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The support ticket was opened by [[Jamal Washington]] and escalated to Ingrid Johansson "
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "oposes moving the launch to March, [[Soo-jin Park]] disagrees, and Amara Nwosu wants m"
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "March, Soo-jin Park disagrees, and [[Amara Nwosu]] wants more data."
+          },
+          {
+            "id": "prompts-author-039",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please send the minutes to [[Anders Eriksen]] at anders.eriksen@nordlys.example."
+          },
+          {
+            "id": "prompts-author-040",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "te my bio in the third person. I'm [[Thabo Mokoena]], a civil engineer based in Johanne"
+          },
+          {
+            "id": "prompts-author-046",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "u check the tone of this message? \"[[Priya]], I need the figures today, not tom"
+          },
+          {
+            "id": "prompts-author-047",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add [[Marta Kowalczyk]] as the emergency contact on the fo"
+          },
+          {
+            "id": "prompts-author-057",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a poem for [[Charlotte]] on her tenth birthday."
+          },
+          {
+            "id": "prompts-author-059",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ect the spelling in this caption: \"[[Jean-Luc Moreau]] accepting the award in Cannes.\""
+          },
+          {
+            "id": "prompts-author-064",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a short toast for Uncle [[Raymond]]'s seventieth birthday."
+          },
+          {
+            "id": "prompts-author-068",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "lease translate the greeting \"Dear [[Sofia Ricci]], thank you for your patience.\""
+          },
+          {
+            "id": "prompts-author-070",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Create a seating chart note: [[Olumide Bakare]] next to Hanne Vos, and Ji-ho Kim n"
+          },
+          {
+            "id": "prompts-author-071",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The package is for [[Tatiana Smirnova]]. Please confirm the address and ch"
+          },
+          {
+            "id": "prompts-author-073",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Explain to [[Francesca Bellini]] why the quote increased by fifteen"
+          },
+          {
+            "id": "prompts-author-080",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a polite decline to [[Victoria Hale]]'s invitation to speak at the summi"
+          },
+          {
+            "id": "prompts-author-083",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Notify [[Amélie Laurent]] that her order #77120 has shipped,"
+          },
+          {
+            "id": "prompts-author-087",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ine of a toast for Mira Kapoor and [[Arjun Desai]]'s anniversary."
+          },
+          {
+            "id": "prompts-author-088",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell [[Carla]] and Diego that the keys are under "
+          },
+          {
+            "id": "prompts-author-091",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add [[Joon-woo Lee]] to the thank-you list for voluntee"
+          },
+          {
+            "id": "prompts-user-001",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Please draft an email to [[Alice Aremic]] asking her to confirm her availabi"
+          },
+          {
+            "id": "prompts-user-003",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "help me write a polite reminder to [[Sofia Mendes]] about the overdue invoice?"
+          },
+          {
+            "id": "prompts-user-009",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Draft a thank-you message to [[Chloe Laurent]] for helping resolve the support re"
+          },
+          {
+            "id": "prompts-user-019",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Write a handover note from [[Amara Nwosu]] to Victor Salazar covering the ope"
+          },
+          {
+            "id": "prompts-user-019",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": " handover note from Amara Nwosu to [[Victor Salazar]] covering the open support tickets."
+          }
+        ],
+        "false_positives": [
+          {
+            "id": "prompts-author-013",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "e-Marie Dupont, starts on the 3rd. [[Draft]] a welcome message for the whole de"
+          },
+          {
+            "id": "prompts-author-021",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Tell Michael]] that the meeting has moved to 3 p."
+          },
+          {
+            "id": "prompts-author-039",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please send the minutes to Anders [[Eriksen]] at anders.eriksen@nordlys.example."
+          },
+          {
+            "id": "prompts-author-047",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Add Marta Kowalczyk]] as the emergency contact on the fo"
+          },
+          {
+            "id": "prompts-author-087",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ine of a toast for Mira Kapoor and [[Arjun Desai's]] anniversary."
+          },
+          {
+            "id": "prompts-author-088",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Tell Carla]] and Diego that the keys are under "
+          },
+          {
+            "id": "prompts-author-091",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add Joon-woo [[Lee]] to the thank-you list for voluntee"
+          },
+          {
+            "id": "prompts-author-115",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": "Give me a recipe for [[Pad Thai]] that takes less than thirty minute"
+          },
+          {
+            "id": "prompts-author-138",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": " paragraph about the importance of [[Valentine]]'s Day for local florists."
+          },
+          {
+            "id": "prompts-author-148",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": "Write a short note to my [[Landlord]] asking when the heating will be fi"
+          },
+          {
+            "id": "prompts-user-030",
+            "group": "negative_user",
+            "type": "PERSON",
+            "text": "iew the headings Project Overview, [[Delivery Schedule]], and Budget Summary for consistenc"
+          }
+        ]
+      },
+      "balanced-two-word-rule": {
+        "false_negatives": [
+          {
+            "id": "prompts-author-004",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "hank-you note to our teacher, Mrs. [[Delgado]], for all her help this semester."
+          },
+          {
+            "id": "prompts-author-008",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "e grammar in this email: \"Dear Dr. [[Katarzyna Nowak]], I am writing to ask about the sta"
+          },
+          {
+            "id": "prompts-author-013",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Our new hire, [[Anne-Marie Dupont]], starts on the 3rd. Draft a welcom"
+          },
+          {
+            "id": "prompts-author-021",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell [[Michael]] that the meeting has moved to 3 p."
+          },
+          {
+            "id": "prompts-author-022",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Grace]] asked whether the report could be "
+          },
+          {
+            "id": "prompts-author-025",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Our landlord, Mr. [[Alvarez]], says the lease renewal letter wil"
+          },
+          {
+            "id": "prompts-author-030",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The support ticket was opened by [[Jamal Washington]] and escalated to Ingrid Johansson "
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "oposes moving the launch to March, [[Soo-jin Park]] disagrees, and Amara Nwosu wants m"
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "March, Soo-jin Park disagrees, and [[Amara Nwosu]] wants more data."
+          },
+          {
+            "id": "prompts-author-039",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please send the minutes to [[Anders Eriksen]] at anders.eriksen@nordlys.example."
+          },
+          {
+            "id": "prompts-author-040",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "te my bio in the third person. I'm [[Thabo Mokoena]], a civil engineer based in Johanne"
+          },
+          {
+            "id": "prompts-author-046",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "u check the tone of this message? \"[[Priya]], I need the figures today, not tom"
+          },
+          {
+            "id": "prompts-author-047",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add [[Marta Kowalczyk]] as the emergency contact on the fo"
+          },
+          {
+            "id": "prompts-author-057",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a poem for [[Charlotte]] on her tenth birthday."
+          },
+          {
+            "id": "prompts-author-059",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ect the spelling in this caption: \"[[Jean-Luc Moreau]] accepting the award in Cannes.\""
+          },
+          {
+            "id": "prompts-author-064",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a short toast for Uncle [[Raymond]]'s seventieth birthday."
+          },
+          {
+            "id": "prompts-author-068",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "lease translate the greeting \"Dear [[Sofia Ricci]], thank you for your patience.\""
+          },
+          {
+            "id": "prompts-author-070",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Create a seating chart note: [[Olumide Bakare]] next to Hanne Vos, and Ji-ho Kim n"
+          },
+          {
+            "id": "prompts-author-071",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The package is for [[Tatiana Smirnova]]. Please confirm the address and ch"
+          },
+          {
+            "id": "prompts-author-073",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Explain to [[Francesca Bellini]] why the quote increased by fifteen"
+          },
+          {
+            "id": "prompts-author-074",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please help me word a note to [[Henry]], my neighbor, about the noise from"
+          },
+          {
+            "id": "prompts-author-075",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": " The detective is called Inspector [[Maigret]]; describe her first scene."
+          },
+          {
+            "id": "prompts-author-080",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a polite decline to [[Victoria Hale]]'s invitation to speak at the summi"
+          },
+          {
+            "id": "prompts-author-081",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "icy was announced by Chief Justice [[Roberts]] in a short statement. Summarize it"
+          },
+          {
+            "id": "prompts-author-083",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Notify [[Amélie Laurent]] that her order #77120 has shipped,"
+          },
+          {
+            "id": "prompts-author-087",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ine of a toast for Mira Kapoor and [[Arjun Desai]]'s anniversary."
+          },
+          {
+            "id": "prompts-author-088",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell [[Carla]] and Diego that the keys are under "
+          },
+          {
+            "id": "prompts-author-088",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell Carla and [[Diego]] that the keys are under the mat."
+          },
+          {
+            "id": "prompts-author-091",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add [[Joon-woo Lee]] to the thank-you list for voluntee"
+          },
+          {
+            "id": "prompts-user-001",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Please draft an email to [[Alice Aremic]] asking her to confirm her availabi"
+          },
+          {
+            "id": "prompts-user-003",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "help me write a polite reminder to [[Sofia Mendes]] about the overdue invoice?"
+          },
+          {
+            "id": "prompts-user-009",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Draft a thank-you message to [[Chloe Laurent]] for helping resolve the support re"
+          },
+          {
+            "id": "prompts-user-019",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Write a handover note from [[Amara Nwosu]] to Victor Salazar covering the ope"
+          },
+          {
+            "id": "prompts-user-019",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": " handover note from Amara Nwosu to [[Victor Salazar]] covering the open support tickets."
+          }
+        ],
+        "false_positives": [
+          {
+            "id": "prompts-author-021",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Tell Michael]] that the meeting has moved to 3 p."
+          },
+          {
+            "id": "prompts-author-047",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Add Marta Kowalczyk]] as the emergency contact on the fo"
+          },
+          {
+            "id": "prompts-author-087",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ine of a toast for Mira Kapoor and [[Arjun Desai's]] anniversary."
+          },
+          {
+            "id": "prompts-author-088",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Tell Carla]] and Diego that the keys are under "
+          },
+          {
+            "id": "prompts-author-115",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": "Give me a recipe for [[Pad Thai]] that takes less than thirty minute"
+          },
+          {
+            "id": "prompts-user-030",
+            "group": "negative_user",
+            "type": "PERSON",
+            "text": "iew the headings Project Overview, [[Delivery Schedule]], and Budget Summary for consistenc"
+          }
+        ]
+      },
+      "patterns-only": {
+        "false_negatives": [
+          {
+            "id": "prompts-author-001",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please draft a polite reply to [[Sarah Jenkins]] confirming that her refund was pro"
+          },
+          {
+            "id": "prompts-author-002",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": " meeting notes? The attendees were [[Rahul Mehta]], Elena Petrova and Tomás Alvarez."
+          },
+          {
+            "id": "prompts-author-002",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "s? The attendees were Rahul Mehta, [[Elena Petrova]] and Tomás Alvarez."
+          },
+          {
+            "id": "prompts-author-002",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ere Rahul Mehta, Elena Petrova and [[Tomás Alvarez]]."
+          },
+          {
+            "id": "prompts-author-003",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "My name is [[Aisha Rahman]] and I would like to change the shi"
+          },
+          {
+            "id": "prompts-author-004",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "hank-you note to our teacher, Mrs. [[Delgado]], for all her help this semester."
+          },
+          {
+            "id": "prompts-author-005",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Hi team, [[Wei Zhang]] will be out next week, so please s"
+          },
+          {
+            "id": "prompts-author-005",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": " so please send anything urgent to [[Priya Nair]]."
+          },
+          {
+            "id": "prompts-author-006",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "te this sentence into French: \"Ask [[Oluwaseun Adeyemi]] to call me back tonight.\""
+          },
+          {
+            "id": "prompts-author-007",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The patient, [[Margaret O'Connor]], reported mild dizziness after sta"
+          },
+          {
+            "id": "prompts-author-008",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "e grammar in this email: \"Dear Dr. [[Katarzyna Nowak]], I am writing to ask about the sta"
+          },
+          {
+            "id": "prompts-author-009",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "as the lead author of the paper by [[Daniel Okafor]] and Mei-Ling Chen on battery recyc"
+          },
+          {
+            "id": "prompts-author-009",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": " of the paper by Daniel Okafor and [[Mei-Ling Chen]] on battery recycling?"
+          },
+          {
+            "id": "prompts-author-010",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please remind [[Yossi Cohen]] that the contract needs his signat"
+          },
+          {
+            "id": "prompts-author-011",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ing a surprise party for my sister [[Noa Levi]]. Can you suggest a theme and a sch"
+          },
+          {
+            "id": "prompts-author-012",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "pose a LinkedIn recommendation for [[Carlos Mendoza]], who managed our logistics team fo"
+          },
+          {
+            "id": "prompts-author-013",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Our new hire, [[Anne-Marie Dupont]], starts on the 3rd. Draft a welcom"
+          },
+          {
+            "id": "prompts-author-014",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Could you proofread this? \"Mr. [[Hiroshi Tanaka]] will present the quarterly results"
+          },
+          {
+            "id": "prompts-author-015",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Create a short bio for Professor [[Ibrahim Al-Sayed]], who teaches organic chemistry at "
+          },
+          {
+            "id": "prompts-author-016",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Reply to [[Jennifer Lopez-Garcia]] and tell her the invoice is attach"
+          },
+          {
+            "id": "prompts-author-017",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please call [[Fatima Zahra]] on +212 5 22 49 83 10 to confirm t"
+          },
+          {
+            "id": "prompts-author-018",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The commit was authored by [[Luca Bianchi]] and reviewed by Sven Lindqvist. Su"
+          },
+          {
+            "id": "prompts-author-018",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ed by Luca Bianchi and reviewed by [[Sven Lindqvist]]. Summarize what changed."
+          },
+          {
+            "id": "prompts-author-019",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a eulogy for my grandfather, [[Walter Kowalski]], who loved fishing and old jazz re"
+          },
+          {
+            "id": "prompts-author-020",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "laint to the airline: my passenger [[Priyanka Sharma]] was denied boarding even though he"
+          },
+          {
+            "id": "prompts-author-021",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell [[Michael]] that the meeting has moved to 3 p."
+          },
+          {
+            "id": "prompts-author-022",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Grace]] asked whether the report could be "
+          },
+          {
+            "id": "prompts-author-023",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please add [[Will Thompson]] to the distribution list for the w"
+          },
+          {
+            "id": "prompts-author-024",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Can you rewrite this sentence? \"[[Hunter Davis]] and April Brooks are leading the a"
+          },
+          {
+            "id": "prompts-author-024",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "e this sentence? \"Hunter Davis and [[April Brooks]] are leading the audit this quarter"
+          },
+          {
+            "id": "prompts-author-025",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Our landlord, Mr. [[Alvarez]], says the lease renewal letter wil"
+          },
+          {
+            "id": "prompts-author-026",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Marketing Manager role. My name is [[Olivia Bennett]] and I have six years of experience"
+          },
+          {
+            "id": "prompts-author-027",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ld be a good gift for my colleague [[Dmitri Volkov]], who is retiring after thirty year"
+          },
+          {
+            "id": "prompts-author-028",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "this paragraph from my essay about [[Marie Curie]] and her work on radioactivity."
+          },
+          {
+            "id": "prompts-author-029",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please ask [[Nguyen Thi Lan]] to resend the scanned passport; th"
+          },
+          {
+            "id": "prompts-author-030",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The support ticket was opened by [[Jamal Washington]] and escalated to Ingrid Johansson "
+          },
+          {
+            "id": "prompts-author-030",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": " Jamal Washington and escalated to [[Ingrid Johansson]] in the billing team."
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Summarize this thread: [[Kevin O'Brien]] proposes moving the launch to Marc"
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "oposes moving the launch to March, [[Soo-jin Park]] disagrees, and Amara Nwosu wants m"
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "March, Soo-jin Park disagrees, and [[Amara Nwosu]] wants more data."
+          },
+          {
+            "id": "prompts-author-032",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": " a short speech for the wedding of [[Rebecca Stein]] and Jonathan Weiss next June."
+          },
+          {
+            "id": "prompts-author-032",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "r the wedding of Rebecca Stein and [[Jonathan Weiss]] next June."
+          },
+          {
+            "id": "prompts-author-033",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Remind me to congratulate [[Mohammed Al-Farsi]] on his promotion."
+          },
+          {
+            "id": "prompts-author-034",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": " translate into Spanish: \"Our CEO, [[Elizabeth Warren-Hayes]], will join the call at noon.\""
+          },
+          {
+            "id": "prompts-author-035",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Draft an apology to [[Hannah Schmidt]] for the delayed shipment, and offe"
+          },
+          {
+            "id": "prompts-author-036",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "o address the committee chair, Dr. [[Laila Hassan]], by her first name in an email?"
+          },
+          {
+            "id": "prompts-author-037",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ference letter should mention that [[Sebastian Ortiz]] led two successful product launche"
+          },
+          {
+            "id": "prompts-author-038",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ake this announcement friendlier: \"[[Emma Clarke]] has joined the finance team as a s"
+          }
+        ],
+        "false_positives": []
+      },
+      "ner-only": {
+        "false_negatives": [
+          {
+            "id": "prompts-author-008",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "e grammar in this email: \"Dear Dr. [[Katarzyna Nowak]], I am writing to ask about the sta"
+          },
+          {
+            "id": "prompts-author-013",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Our new hire, [[Anne-Marie Dupont]], starts on the 3rd. Draft a welcom"
+          },
+          {
+            "id": "prompts-author-016",
+            "group": "names_author",
+            "type": "EMAIL",
+            "text": " invoice is attached. Her email is [[j.lopez-garcia@brightfield.example.com]]."
+          },
+          {
+            "id": "prompts-author-017",
+            "group": "names_author",
+            "type": "PHONE",
+            "text": "Please call Fatima Zahra on [[+212 5 22 49 83 10]] to confirm the delivery window."
+          },
+          {
+            "id": "prompts-author-021",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell [[Michael]] that the meeting has moved to 3 p."
+          },
+          {
+            "id": "prompts-author-022",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Grace]] asked whether the report could be "
+          },
+          {
+            "id": "prompts-author-030",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The support ticket was opened by [[Jamal Washington]] and escalated to Ingrid Johansson "
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "oposes moving the launch to March, [[Soo-jin Park]] disagrees, and Amara Nwosu wants m"
+          },
+          {
+            "id": "prompts-author-031",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "March, Soo-jin Park disagrees, and [[Amara Nwosu]] wants more data."
+          },
+          {
+            "id": "prompts-author-039",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please send the minutes to [[Anders Eriksen]] at anders.eriksen@nordlys.example."
+          },
+          {
+            "id": "prompts-author-039",
+            "group": "names_author",
+            "type": "EMAIL",
+            "text": "d the minutes to Anders Eriksen at [[anders.eriksen@nordlys.example.org]] and copy Yuki Matsumoto."
+          },
+          {
+            "id": "prompts-author-040",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "te my bio in the third person. I'm [[Thabo Mokoena]], a civil engineer based in Johanne"
+          },
+          {
+            "id": "prompts-author-046",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "u check the tone of this message? \"[[Priya]], I need the figures today, not tom"
+          },
+          {
+            "id": "prompts-author-047",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add [[Marta Kowalczyk]] as the emergency contact on the fo"
+          },
+          {
+            "id": "prompts-author-047",
+            "group": "names_author",
+            "type": "PHONE",
+            "text": "contact on the form. Her number is [[+48 22 555 01 23]]."
+          },
+          {
+            "id": "prompts-author-057",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a poem for [[Charlotte]] on her tenth birthday."
+          },
+          {
+            "id": "prompts-author-059",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ect the spelling in this caption: \"[[Jean-Luc Moreau]] accepting the award in Cannes.\""
+          },
+          {
+            "id": "prompts-author-064",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a short toast for Uncle [[Raymond]]'s seventieth birthday."
+          },
+          {
+            "id": "prompts-author-068",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "lease translate the greeting \"Dear [[Sofia Ricci]], thank you for your patience.\""
+          },
+          {
+            "id": "prompts-author-070",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Create a seating chart note: [[Olumide Bakare]] next to Hanne Vos, and Ji-ho Kim n"
+          },
+          {
+            "id": "prompts-author-071",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "The package is for [[Tatiana Smirnova]]. Please confirm the address and ch"
+          },
+          {
+            "id": "prompts-author-071",
+            "group": "names_author",
+            "type": "CREDIT_CARD",
+            "text": "rm the address and charge the card [[5555 5555 5555 4444]]."
+          },
+          {
+            "id": "prompts-author-073",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Explain to [[Francesca Bellini]] why the quote increased by fifteen"
+          },
+          {
+            "id": "prompts-author-080",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Write a polite decline to [[Victoria Hale]]'s invitation to speak at the summi"
+          },
+          {
+            "id": "prompts-author-083",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Notify [[Amélie Laurent]] that her order #77120 has shipped,"
+          },
+          {
+            "id": "prompts-author-087",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ine of a toast for Mira Kapoor and [[Arjun Desai]]'s anniversary."
+          },
+          {
+            "id": "prompts-author-088",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Tell [[Carla]] and Diego that the keys are under "
+          },
+          {
+            "id": "prompts-author-091",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add [[Joon-woo Lee]] to the thank-you list for voluntee"
+          },
+          {
+            "id": "prompts-author-092",
+            "group": "names_author",
+            "type": "PHONE",
+            "text": "broke, is asking for a callback at [[+1 415 555 2671]]. Draft the voicemail."
+          },
+          {
+            "id": "prompts-user-001",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Please draft an email to [[Alice Aremic]] asking her to confirm her availabi"
+          },
+          {
+            "id": "prompts-user-003",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "help me write a polite reminder to [[Sofia Mendes]] about the overdue invoice?"
+          },
+          {
+            "id": "prompts-user-009",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Draft a thank-you message to [[Chloe Laurent]] for helping resolve the support re"
+          },
+          {
+            "id": "prompts-user-019",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": "Write a handover note from [[Amara Nwosu]] to Victor Salazar covering the ope"
+          },
+          {
+            "id": "prompts-user-019",
+            "group": "names_user",
+            "type": "PERSON",
+            "text": " handover note from Amara Nwosu to [[Victor Salazar]] covering the open support tickets."
+          }
+        ],
+        "false_positives": [
+          {
+            "id": "prompts-author-013",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "e-Marie Dupont, starts on the 3rd. [[Draft]] a welcome message for the whole de"
+          },
+          {
+            "id": "prompts-author-021",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Tell Michael]] that the meeting has moved to 3 p."
+          },
+          {
+            "id": "prompts-author-039",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Please send the minutes to Anders [[Eriksen]] at anders.eriksen@nordlys.example."
+          },
+          {
+            "id": "prompts-author-047",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Add Marta Kowalczyk]] as the emergency contact on the fo"
+          },
+          {
+            "id": "prompts-author-087",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "ine of a toast for Mira Kapoor and [[Arjun Desai's]] anniversary."
+          },
+          {
+            "id": "prompts-author-088",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "[[Tell Carla]] and Diego that the keys are under "
+          },
+          {
+            "id": "prompts-author-091",
+            "group": "names_author",
+            "type": "PERSON",
+            "text": "Add Joon-woo [[Lee]] to the thank-you list for voluntee"
+          },
+          {
+            "id": "prompts-author-115",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": "Give me a recipe for [[Pad Thai]] that takes less than thirty minute"
+          },
+          {
+            "id": "prompts-author-138",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": " paragraph about the importance of [[Valentine]]'s Day for local florists."
+          },
+          {
+            "id": "prompts-author-148",
+            "group": "negative_author",
+            "type": "PERSON",
+            "text": "Write a short note to my [[Landlord]] asking when the heating will be fi"
+          },
+          {
+            "id": "prompts-user-030",
+            "group": "negative_user",
+            "type": "PERSON",
+            "text": "iew the headings Project Overview, [[Delivery Schedule]], and Budget Summary for consistenc"
+          }
+        ]
+      }
+    }
+  }
+}

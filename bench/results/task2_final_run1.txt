@@ -1,0 +1,45 @@
+﻿CPU: 12th Gen Intel(R) Core(TM) i7-1255U | Python 3.12.14 | spaCy 3.8.18 | phonenumbers 9.0.43 | Windows | pinned to CPU 0, 1 BLAS/OMP thread
+Memory before engine (interpreter + imports of this script): current/peak MiB = (83.3, 83.3)
+Engine load (cold start): 335 ms; after load current/peak MiB = (119.8, 131.1)
+
+== Latency by size: sparse prose (~1 finding per 400 chars), balanced profile ==
+text     |   chars |   bytes | findings | status   | first ms | mean ms  | median   | p95 ms  | max ms
+sparse   |     495 |     495 |        2 | complete |      8.4 |      5.9 |      5.7 |     6.8 |      7.0
+sparse   |     997 |     997 |        4 | complete |     15.8 |     11.5 |     11.3 |    13.0 |     13.5
+sparse   |    1999 |    1999 |        7 | complete |     21.4 |     20.1 |     20.0 |    21.2 |     22.0
+sparse   |    4993 |    4993 |       20 | complete |     48.5 |     50.6 |     48.9 |    56.3 |     68.1
+sparse   |    9997 |    9997 |       40 | complete |     90.3 |     91.2 |     91.9 |       - |    103.7
+sparse   |   19997 |   19997 |       80 | complete |    181.0 |    186.4 |    187.3 |       - |    198.8
+sparse   |   49997 |   49997 |      200 | complete |    474.6 |    447.4 |    443.5 |       - |    467.7
+sparse   |   99992 |   99992 |      401 | complete |    914.3 |    888.7 |    894.1 |       - |    902.8
+Assumed mix {500: 0.4, 1000: 0.25, 2000: 0.2, 5000: 0.1, 10000: 0.05}: weighted mean = 18.9 ms (target: 100 ms average)
+
+== Latency by size: PII-dense text (~1 finding per 40 chars) ==
+text     |   chars |   bytes | findings | status   | first ms | mean ms  | median   | p95 ms  | max ms
+dense    |     977 |     977 |       26 | complete |      9.0 |      8.6 |      8.4 |     9.4 |     10.4
+dense    |    4997 |    4997 |      134 | complete |     42.6 |     48.6 |     47.2 |    56.5 |     79.5
+dense    |   19995 |   19995 |      537 | complete |    196.3 |    170.6 |    165.5 |       - |    194.7
+dense    |   99994 |   99994 |     2684 | complete |    803.6 |    839.4 |    844.3 |       - |    855.6
+
+== Non-English (NER skipped, patterns run), 5,000 chars ==
+text     |   chars |   bytes | findings | status   | first ms | mean ms  | median   | p95 ms  | max ms
+spanish  |    4996 |    5204 |        0 | partial  |      2.5 |      2.7 |      2.7 |     3.0 |      3.5
+hebrew   |    4998 |    8798 |        0 | partial  |      1.6 |      1.7 |      1.6 |     2.0 |      2.1
+
+== Hostile input, whole engine, 100,000 chars (bounded time, status must report it) ==
+text     |   chars |   bytes | findings | status   | first ms | mean ms  | median   | p95 ms  | max ms
+digits   |   99999 |   99999 |        0 | complete |    469.2 |    467.9 |    467.3 |       - |    475.1
+plus-chain|   99999 |   99999 |        0 | partial  |    698.0 |    676.1 |    675.3 |       - |    682.3
+at-signs |  100000 |  100000 |        0 | partial  |    117.1 |    106.5 |    106.4 |       - |    106.9
+no-space |  100000 |  100000 |        0 | partial  |    111.9 |    114.6 |    114.2 |       - |    115.7
+valid-mail|   99994 |   99994 |    14285 | complete |     92.3 |     82.8 |     69.3 |       - |    114.3
+valid-card|   99999 |   99999 |     5000 | complete |    588.9 |    420.3 |    416.3 |       - |    430.5
+valid-phone|   99997 |   99997 |     5882 | complete |    359.8 |    367.3 |    356.1 |       - |    403.7
+
+== Phone numbers from several regions (lazy region metadata), memory before/after ==
+current/peak MiB before (132.7, 135.0) -> after (132.7, 135.0)
+
+== Repeated scans: memory growth over 2,000 mixed-size scans ==
+current MiB every 250 scans: [132.7, 132.1, 129.8, 133.3, 127.8, 131.8, 136.4, 126.0, 129.7]
+growth first->last: -3.0 MiB; final current/peak MiB = (129.7, 139.2)
+metrics (aggregate only): scans=2354, status={'complete': 2265, 'partial': 89}, entities={'PERSON': 21951, 'EMAIL': 82860, 'PHONE': 39797, 'CREDIT_CARD': 28628}, errors={'phone:IncompleteScan': 5}, skips={'ner:language': 128}
